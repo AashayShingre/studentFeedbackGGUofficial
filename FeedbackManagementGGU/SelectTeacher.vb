@@ -1,9 +1,9 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class Form2
+Public Class SelectTeacher
     Public Property Conn As New MySqlConnection
 
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub SelectTeacher_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             'load the school names
             Dim SchoolQuery = "select * from schools"
@@ -23,14 +23,12 @@ Public Class Form2
             MessageBox.Show("Cannot connect to the database; please reopen the page.")
             Me.Close()
         End Try
-
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
         Dim school_id As Int32 = Convert.ToInt32(ComboBox1.SelectedValue.GetHashCode())
 
         Dim DeptQuery As String = "select dept_id, dept_name from departments where school_id = " + school_id.ToString("00") + ";"
-
         Dim da As New MySqlDataAdapter(DeptQuery, Conn)
         Dim dt As New DataTable
 
@@ -44,7 +42,6 @@ Public Class Form2
         ComboBox2.ResetText()
         ComboBox3.ResetText()
         ComboBox4.ResetText()
-
     End Sub
 
     Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
@@ -64,7 +61,6 @@ Public Class Form2
 
         ComboBox3.ResetText()
         ComboBox4.ResetText()
-
     End Sub
 
     Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
@@ -83,7 +79,6 @@ Public Class Form2
         End With
 
         ComboBox4.ResetText()
-
     End Sub
 
     Private Sub ComboBox4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox4.SelectedIndexChanged
@@ -97,13 +92,26 @@ Public Class Form2
             FeedbackForm.teacher_id = teacher_id.ToString("00")
             FeedbackForm.teacher_name = ComboBox4.Text
             FeedbackForm.conn = Conn
-            FeedbackForm.student_name = TextBox1.Text
+            'FeedbackForm.student_name = TextBox1.Text
             Console.WriteLine("teacher name is " + ComboBox4.Text)
             Console.WriteLine("teacherid is " + teacher_id.ToString("00"))
-            FeedbackForm.Show()
+
             Me.Hide()
+            FeedbackForm.Show()
         Catch ex As Exception
             MessageBox.Show("Teacher not selected")
         End Try
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Me.Close()
+        Form1.Show()
+    End Sub
+
+    Private Sub ComboBox1_KeyUp(sender As Object, e As KeyEventArgs) Handles ComboBox4.KeyUp, ComboBox3.KeyUp, ComboBox2.KeyUp, ComboBox1.KeyUp
+        If e.KeyCode = Keys.Enter Then
+            e.Handled = True
+            SendKeys.Send("{TAB}")
+        End If
     End Sub
 End Class

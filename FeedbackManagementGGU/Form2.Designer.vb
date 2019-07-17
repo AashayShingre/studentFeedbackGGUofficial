@@ -34,6 +34,8 @@ Partial Class Form2
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -113,8 +115,8 @@ Partial Class Form2
         '
         'ComboBox1
         '
-        Me.ComboBox1.Enabled = False
-        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.ComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.ComboBox1.Location = New System.Drawing.Point(207, 233)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(462, 33)
@@ -122,7 +124,8 @@ Partial Class Form2
         '
         'ComboBox2
         '
-        Me.ComboBox2.Enabled = False
+        Me.ComboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.ComboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(207, 292)
         Me.ComboBox2.Name = "ComboBox2"
@@ -131,18 +134,20 @@ Partial Class Form2
         '
         'ComboBox3
         '
-        Me.ComboBox3.Enabled = False
+        Me.ComboBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.ComboBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(207, 355)
+        Me.ComboBox3.Location = New System.Drawing.Point(207, 350)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(462, 33)
         Me.ComboBox3.TabIndex = 10
         '
         'ComboBox4
         '
-        Me.ComboBox4.Enabled = False
+        Me.ComboBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.ComboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(207, 411)
+        Me.ComboBox4.Location = New System.Drawing.Point(207, 406)
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(462, 33)
         Me.ComboBox4.TabIndex = 11
@@ -157,12 +162,32 @@ Partial Class Form2
         Me.Button1.Text = "Add Feedback"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(37, 471)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(78, 25)
+        Me.Label7.TabIndex = 13
+        Me.Label7.Text = "Subject"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(207, 466)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(462, 30)
+        Me.TextBox2.TabIndex = 14
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(897, 697)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ComboBox4)
         Me.Controls.Add(Me.ComboBox3)
@@ -196,4 +221,6 @@ Partial Class Form2
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label7 As Label
+    Friend WithEvents TextBox2 As TextBox
 End Class
