@@ -97,7 +97,6 @@ Public Class Form2
             FeedbackForm.teacher_id = teacher_id.ToString("00")
             FeedbackForm.teacher_name = ComboBox4.Text
             FeedbackForm.conn = Conn
-            FeedbackForm.student_name = TextBox1.Text
             Console.WriteLine("teacher name is " + ComboBox4.Text)
             Console.WriteLine("teacherid is " + teacher_id.ToString("00"))
             FeedbackForm.Show()

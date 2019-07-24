@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FeedbackForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,13 +20,20 @@ Partial Class FeedbackForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -63,8 +70,10 @@ Partial Class FeedbackForm
         Me.Label25 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
+        Me.TableLayoutPanel4.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -77,6 +86,7 @@ Partial Class FeedbackForm
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel3, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.LinkLabel1, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Button2, 0, 5)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -85,9 +95,9 @@ Partial Class FeedbackForm
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 97.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(994, 1055)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 137.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(970, 1055)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'Label2
@@ -109,7 +119,7 @@ Partial Class FeedbackForm
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift Light", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(3, 49)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(988, 29)
+        Me.Label1.Size = New System.Drawing.Size(964, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Add Feedback"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -120,25 +130,109 @@ Partial Class FeedbackForm
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.Button1, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button1, 1, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.LinkLabel2, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.LinkLabel3, 2, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel4, 2, 1)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 931)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 877)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 1
+        Me.TableLayoutPanel2.RowCount = 2
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(988, 91)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(964, 131)
         Me.TableLayoutPanel2.TabIndex = 2
         '
         'Button1
         '
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift SemiBold", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(397, 3)
+        Me.Button1.Location = New System.Drawing.Point(385, 44)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(194, 85)
-        Me.Button1.TabIndex = 0
+        Me.Button1.Size = New System.Drawing.Size(194, 84)
+        Me.Button1.TabIndex = 1
         Me.Button1.Text = "Submit"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel2.LinkColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.LinkLabel2.Location = New System.Drawing.Point(3, 0)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(39, 17)
+        Me.LinkLabel2.TabIndex = 2
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "Prev"
+        '
+        'LinkLabel3
+        '
+        Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.Dock = System.Windows.Forms.DockStyle.Right
+        Me.LinkLabel3.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel3.LinkColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.LinkLabel3.Location = New System.Drawing.Point(849, 0)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(112, 41)
+        Me.LinkLabel3.TabIndex = 0
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Text = "Add More/Next"
+        '
+        'TableLayoutPanel4
+        '
+        Me.TableLayoutPanel4.ColumnCount = 2
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 83.7766!))
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.2234!))
+        Me.TableLayoutPanel4.Controls.Add(Me.TextBox12, 1, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.TextBox13, 1, 1)
+        Me.TableLayoutPanel4.Controls.Add(Me.Label26, 0, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.Label27, 0, 1)
+        Me.TableLayoutPanel4.Location = New System.Drawing.Point(585, 44)
+        Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
+        Me.TableLayoutPanel4.RowCount = 2
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.93877!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.06123!))
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(376, 84)
+        Me.TableLayoutPanel4.TabIndex = 4
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Dock = System.Windows.Forms.DockStyle.Right
+        Me.TextBox12.Location = New System.Drawing.Point(330, 3)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.ReadOnly = True
+        Me.TextBox12.Size = New System.Drawing.Size(43, 22)
+        Me.TextBox12.TabIndex = 3
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Dock = System.Windows.Forms.DockStyle.Right
+        Me.TextBox13.Location = New System.Drawing.Point(330, 42)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.ReadOnly = True
+        Me.TextBox13.Size = New System.Drawing.Size(43, 22)
+        Me.TextBox13.TabIndex = 4
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Label26.Location = New System.Drawing.Point(247, 0)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(65, 39)
+        Me.Label26.TabIndex = 5
+        Me.Label26.Text = "Entry no."
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Label27.Location = New System.Drawing.Point(224, 39)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(88, 45)
+        Me.Label27.TabIndex = 6
+        Me.Label27.Text = "Total Entries"
         '
         'TableLayoutPanel3
         '
@@ -183,30 +277,30 @@ Partial Class FeedbackForm
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(3, 148)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 12
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.71502!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.810013!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.810013!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.810013!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.810013!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.236808!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.979408!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.850708!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.979408!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.979408!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.108109!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.517241!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.050847!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.627119!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.768362!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.474576!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.474576!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.050847!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.19209!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.909605!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.19209!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.494208!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(988, 777)
-        Me.TableLayoutPanel3.TabIndex = 0
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(964, 723)
+        Me.TableLayoutPanel3.TabIndex = 1
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label4.Font = New System.Drawing.Font("Bahnschrift Condensed", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(561, 0)
+        Me.Label4.Location = New System.Drawing.Point(548, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(397, 91)
+        Me.Label4.Size = New System.Drawing.Size(397, 69)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "SCORE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(5 - Very Good, 4 - Good, 3 - Satisfactory, 0 - Bad)"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -215,7 +309,7 @@ Partial Class FeedbackForm
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(53, 705)
+        Me.Label12.Location = New System.Drawing.Point(53, 653)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(146, 24)
         Me.Label12.TabIndex = 17
@@ -226,7 +320,7 @@ Partial Class FeedbackForm
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(53, 642)
+        Me.Label11.Location = New System.Drawing.Point(53, 594)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(224, 24)
         Me.Label11.TabIndex = 16
@@ -237,7 +331,7 @@ Partial Class FeedbackForm
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(53, 580)
+        Me.Label10.Location = New System.Drawing.Point(53, 537)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(451, 24)
         Me.Label10.TabIndex = 15
@@ -248,7 +342,7 @@ Partial Class FeedbackForm
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(53, 518)
+        Me.Label13.Location = New System.Drawing.Point(53, 478)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(276, 24)
         Me.Label13.TabIndex = 14
@@ -259,7 +353,7 @@ Partial Class FeedbackForm
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(53, 457)
+        Me.Label14.Location = New System.Drawing.Point(53, 418)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(417, 24)
         Me.Label14.TabIndex = 13
@@ -270,7 +364,7 @@ Partial Class FeedbackForm
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(53, 395)
+        Me.Label15.Location = New System.Drawing.Point(53, 360)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(432, 24)
         Me.Label15.TabIndex = 12
@@ -281,7 +375,7 @@ Partial Class FeedbackForm
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(53, 331)
+        Me.Label9.Location = New System.Drawing.Point(53, 299)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(180, 24)
         Me.Label9.TabIndex = 6
@@ -292,7 +386,7 @@ Partial Class FeedbackForm
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(53, 271)
+        Me.Label8.Location = New System.Drawing.Point(53, 238)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(343, 24)
         Me.Label8.TabIndex = 7
@@ -303,7 +397,7 @@ Partial Class FeedbackForm
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(53, 211)
+        Me.Label7.Location = New System.Drawing.Point(53, 182)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(114, 24)
         Me.Label7.TabIndex = 4
@@ -314,7 +408,7 @@ Partial Class FeedbackForm
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(53, 151)
+        Me.Label6.Location = New System.Drawing.Point(53, 127)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(158, 24)
         Me.Label6.TabIndex = 3
@@ -325,7 +419,7 @@ Partial Class FeedbackForm
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(53, 91)
+        Me.Label5.Location = New System.Drawing.Point(53, 69)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(157, 24)
         Me.Label5.TabIndex = 2
@@ -335,7 +429,7 @@ Partial Class FeedbackForm
         'TextBox11
         '
         Me.TextBox11.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox11.Location = New System.Drawing.Point(568, 708)
+        Me.TextBox11.Location = New System.Drawing.Point(555, 656)
         Me.TextBox11.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.TextBox11.MaxLength = 1
         Me.TextBox11.Name = "TextBox11"
@@ -345,7 +439,7 @@ Partial Class FeedbackForm
         'TextBox10
         '
         Me.TextBox10.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(568, 645)
+        Me.TextBox10.Location = New System.Drawing.Point(555, 597)
         Me.TextBox10.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.TextBox10.MaxLength = 1
         Me.TextBox10.Name = "TextBox10"
@@ -355,7 +449,7 @@ Partial Class FeedbackForm
         'TextBox9
         '
         Me.TextBox9.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(568, 583)
+        Me.TextBox9.Location = New System.Drawing.Point(555, 540)
         Me.TextBox9.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.TextBox9.MaxLength = 1
         Me.TextBox9.Name = "TextBox9"
@@ -365,7 +459,7 @@ Partial Class FeedbackForm
         'TextBox8
         '
         Me.TextBox8.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(568, 521)
+        Me.TextBox8.Location = New System.Drawing.Point(555, 481)
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.TextBox8.MaxLength = 1
         Me.TextBox8.Name = "TextBox8"
@@ -375,7 +469,7 @@ Partial Class FeedbackForm
         'TextBox7
         '
         Me.TextBox7.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(568, 460)
+        Me.TextBox7.Location = New System.Drawing.Point(555, 421)
         Me.TextBox7.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.TextBox7.MaxLength = 1
         Me.TextBox7.Name = "TextBox7"
@@ -385,7 +479,7 @@ Partial Class FeedbackForm
         'TextBox6
         '
         Me.TextBox6.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(568, 398)
+        Me.TextBox6.Location = New System.Drawing.Point(555, 363)
         Me.TextBox6.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.TextBox6.MaxLength = 1
         Me.TextBox6.Name = "TextBox6"
@@ -395,7 +489,7 @@ Partial Class FeedbackForm
         'TextBox5
         '
         Me.TextBox5.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(568, 334)
+        Me.TextBox5.Location = New System.Drawing.Point(555, 302)
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.TextBox5.MaxLength = 1
         Me.TextBox5.Name = "TextBox5"
@@ -405,7 +499,7 @@ Partial Class FeedbackForm
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(568, 214)
+        Me.TextBox3.Location = New System.Drawing.Point(555, 185)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.TextBox3.MaxLength = 1
         Me.TextBox3.Name = "TextBox3"
@@ -415,7 +509,7 @@ Partial Class FeedbackForm
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(568, 154)
+        Me.TextBox2.Location = New System.Drawing.Point(555, 130)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.TextBox2.MaxLength = 1
         Me.TextBox2.Name = "TextBox2"
@@ -425,7 +519,7 @@ Partial Class FeedbackForm
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(568, 94)
+        Me.TextBox1.Location = New System.Drawing.Point(555, 72)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.TextBox1.MaxLength = 1
         Me.TextBox1.Name = "TextBox1"
@@ -436,7 +530,7 @@ Partial Class FeedbackForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Arial Unicode MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(3, 91)
+        Me.Label3.Location = New System.Drawing.Point(3, 69)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(19, 23)
         Me.Label3.TabIndex = 29
@@ -446,7 +540,7 @@ Partial Class FeedbackForm
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Arial Unicode MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(3, 151)
+        Me.Label16.Location = New System.Drawing.Point(3, 127)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(19, 23)
         Me.Label16.TabIndex = 30
@@ -456,7 +550,7 @@ Partial Class FeedbackForm
         '
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Arial Unicode MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(3, 211)
+        Me.Label17.Location = New System.Drawing.Point(3, 182)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(19, 23)
         Me.Label17.TabIndex = 31
@@ -466,7 +560,7 @@ Partial Class FeedbackForm
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Arial Unicode MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(3, 271)
+        Me.Label18.Location = New System.Drawing.Point(3, 238)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(19, 23)
         Me.Label18.TabIndex = 32
@@ -476,7 +570,7 @@ Partial Class FeedbackForm
         '
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Arial Unicode MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(3, 331)
+        Me.Label19.Location = New System.Drawing.Point(3, 299)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(19, 23)
         Me.Label19.TabIndex = 33
@@ -486,7 +580,7 @@ Partial Class FeedbackForm
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Arial Unicode MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(3, 395)
+        Me.Label20.Location = New System.Drawing.Point(3, 360)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(19, 23)
         Me.Label20.TabIndex = 34
@@ -496,7 +590,7 @@ Partial Class FeedbackForm
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Arial Unicode MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(3, 457)
+        Me.Label21.Location = New System.Drawing.Point(3, 418)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(19, 23)
         Me.Label21.TabIndex = 35
@@ -506,7 +600,7 @@ Partial Class FeedbackForm
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Arial Unicode MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(3, 518)
+        Me.Label22.Location = New System.Drawing.Point(3, 478)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(19, 23)
         Me.Label22.TabIndex = 36
@@ -516,7 +610,7 @@ Partial Class FeedbackForm
         '
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Arial Unicode MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(3, 580)
+        Me.Label23.Location = New System.Drawing.Point(3, 537)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(19, 23)
         Me.Label23.TabIndex = 37
@@ -526,7 +620,7 @@ Partial Class FeedbackForm
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Arial Unicode MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(3, 642)
+        Me.Label24.Location = New System.Drawing.Point(3, 594)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(28, 23)
         Me.Label24.TabIndex = 38
@@ -536,7 +630,7 @@ Partial Class FeedbackForm
         '
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Arial Unicode MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(3, 705)
+        Me.Label25.Location = New System.Drawing.Point(3, 653)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(28, 23)
         Me.Label25.TabIndex = 39
@@ -545,7 +639,7 @@ Partial Class FeedbackForm
         'TextBox4
         '
         Me.TextBox4.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(568, 274)
+        Me.TextBox4.Location = New System.Drawing.Point(555, 241)
         Me.TextBox4.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.TextBox4.MaxLength = 1
         Me.TextBox4.Name = "TextBox4"
@@ -566,17 +660,30 @@ Partial Class FeedbackForm
         Me.LinkLabel1.Text = "<< Back"
         Me.LinkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'Button2
+        '
+        Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button2.Location = New System.Drawing.Point(793, 1014)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(174, 38)
+        Me.Button2.TabIndex = 3
+        Me.Button2.Text = "Remove further entries"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'FeedbackForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(994, 1055)
+        Me.ClientSize = New System.Drawing.Size(970, 1055)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Name = "FeedbackForm"
         Me.Text = "Add Feedback"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
         Me.TableLayoutPanel2.ResumeLayout(False)
+        Me.TableLayoutPanel2.PerformLayout()
+        Me.TableLayoutPanel4.ResumeLayout(False)
+        Me.TableLayoutPanel4.PerformLayout()
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
         Me.ResumeLayout(False)
@@ -624,4 +731,12 @@ Partial Class FeedbackForm
     Friend WithEvents Label24 As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents LinkLabel2 As LinkLabel
+    Friend WithEvents LinkLabel3 As LinkLabel
+    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
+    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents Label26 As Label
+    Friend WithEvents Label27 As Label
+    Friend WithEvents Button2 As Button
 End Class

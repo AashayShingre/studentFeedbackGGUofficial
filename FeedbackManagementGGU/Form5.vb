@@ -4,36 +4,49 @@ Public Class Form5
     Public Property conn As MySqlConnection
     Public Property type As String
     Public Property current_name As String
+
     Public Property school_name As String
+    Public Property school_table As DataTable = Nothing
+
     Public Property dept_name As String
+    Public Property dept_table As DataTable = Nothing
+
     Public Property course_name As String
+    Public Property course_table As DataTable = Nothing
+
     Public Property current_id As Int32
 
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Console.WriteLine("current_name is " & current_name)
         Label1.Text = "Edit " & type
 
-        Try
-            'load the school names
-            Dim SchoolQuery = "select * from schools"
-            Dim da As New MySqlDataAdapter(SchoolQuery, Me.conn)
-            Dim dt As New DataTable
-
-            da.Fill(dt)
-            ComboBox1.DataSource = dt
+        If Me.school_table IsNot Nothing Then
+            ComboBox1.DataSource = Me.school_table
             With ComboBox1
                 .DisplayMember = "school_name"
                 .ValueMember = "school_id"
             End With
-
-        Catch ex As Exception
-            MessageBox.Show("Cannot connect to the database; please reopen the page.")
-            Me.Close()
-        End Try
-
+        End If
         ComboBox1.Text = school_name
+
+        If dept_table IsNot Nothing Then
+            ComboBox2.DataSource = Me.dept_table
+            With ComboBox2
+                .DisplayMember = "dept_name"
+                .ValueMember = "dept_id"
+            End With
+        End If
         ComboBox2.Text = dept_name
+
+        If course_table IsNot Nothing Then
+            ComboBox3.DataSource = Me.course_table
+            With ComboBox3
+                .DisplayMember = "course_name"
+                .ValueMember = "course_id"
+            End With
+        End If
         ComboBox3.Text = course_name
+
         TextBox1.Text = current_name
 
         If type = "School" Then
@@ -41,16 +54,23 @@ Public Class Form5
             ComboBox2.Visible = False
             ComboBox3.Visible = False
         ElseIf type = "Department" Then
+            ComboBox1.Visible = True
             ComboBox2.Visible = False
             ComboBox3.Visible = False
         ElseIf type = "Course" Then
+            ComboBox1.Visible = True
+            ComboBox2.Visible = True
             ComboBox3.Visible = False
+        Else
+            ComboBox1.Visible = True
+            ComboBox2.Visible = True
+            ComboBox3.Visible = True
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click, LinkLabel1.Click
         Me.Close()
-        Form4.Show()
+        Manage.Show()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -62,19 +82,25 @@ Public Class Form5
             cmd.ExecuteNonQuery()
         ElseIf type = "Department" Then
             Dim school_id As Int32 = Convert.ToInt32(ComboBox1.SelectedValue.GetHashCode())
-            Dim sqlquery As String = "update departments set dept_name = """ & TextBox1.Text & """, school_id = " & school_id.ToString("00") & " where dept_id = " & current_id.ToString("00") & " ;"
+            Dim sqlquery As String = "update departments set dept_name = """ & TextBox1.Text & """, school_id = " & school_id.ToString() & " where dept_id = " & current_id.ToString() & " ;"
             Console.WriteLine(sqlquery)
             Dim cmd As New MySqlCommand(sqlquery, conn)
             cmd.ExecuteNonQuery()
         ElseIf type = "Course" Then
             Dim dept_id As Int32 = Convert.ToInt32(ComboBox2.SelectedValue.GetHashCode())
-            Dim sqlquery As String = "update courses set course_name = """ & TextBox1.Text & """, dept_id = " & dept_id.ToString("00") & " where course_id = " & current_id.ToString("00") & " ;"
+            Dim sqlquery As String = "update courses set course_name = """ & TextBox1.Text & """, dept_id = " & dept_id.ToString() & " where course_id = " & current_id.ToString() & " ;"
             Console.WriteLine(sqlquery)
             Dim cmd As New MySqlCommand(sqlquery, conn)
             cmd.ExecuteNonQuery()
         ElseIf type = "Teacher" Then
             Dim course_id As Int32 = Convert.ToInt32(ComboBox3.SelectedValue.GetHashCode())
-            Dim sqlquery As String = "update teachers set teacher_name = """ & TextBox1.Text & """, course_id = " & course_id.ToString("00") & " where teacher_id = " & current_id.ToString("00") & " ;"
+            Dim sqlquery As String = "update teachers set teacher_name = """ & TextBox1.Text & """, course_id = " & course_id.ToString() & " where teacher_id = " & current_id.ToString() & " ;"
+            Console.WriteLine(sqlquery)
+            Dim cmd As New MySqlCommand(sqlquery, conn)
+            cmd.ExecuteNonQuery()
+        Else type = "Subject"
+            Dim course_id As Int32 = Convert.ToInt32(ComboBox3.SelectedValue.GetHashCode())
+            Dim sqlquery As String = "update subjects set subject_name = """ & TextBox1.Text & """, course_id = " & course_id.ToString() & " where teacher_id = " & current_id.ToString() & " ;"
             Console.WriteLine(sqlquery)
             Dim cmd As New MySqlCommand(sqlquery, conn)
             cmd.ExecuteNonQuery()
@@ -82,7 +108,7 @@ Public Class Form5
 
         MessageBox.Show("Successfully updated")
         Me.Close()
-        Form4.Show()
+        Manage.Show()
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged

@@ -18,9 +18,12 @@ Public Class SelectTeacher
             End With
 
             ComboBox1.ResetText()
+            ComboBox2.ResetText()
+            ComboBox3.ResetText()
+            ComboBox4.ResetText()
 
         Catch ex As Exception
-            MessageBox.Show("Cannot connect to the database; please reopen the page.")
+            MessageBox.Show("Cannot connect to the database\nPlease reopen the page.")
             Me.Close()
         End Try
     End Sub
@@ -38,10 +41,6 @@ Public Class SelectTeacher
             .DisplayMember = "dept_name"
             .ValueMember = "dept_id"
         End With
-
-        ComboBox2.ResetText()
-        ComboBox3.ResetText()
-        ComboBox4.ResetText()
     End Sub
 
     Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
@@ -58,14 +57,12 @@ Public Class SelectTeacher
             .DisplayMember = "course_name"
             .ValueMember = "course_id"
         End With
-
-        ComboBox3.ResetText()
-        ComboBox4.ResetText()
     End Sub
 
     Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
         Dim course_id As Int32 = Convert.ToInt32(ComboBox3.SelectedValue.GetHashCode())
 
+        'Filling teacher options
         Dim teacherQuery As String = "select teacher_id, teacher_name from teachers where course_id = " + course_id.ToString("00") + ";"
 
         Dim da As New MySqlDataAdapter(teacherQuery, Conn)
@@ -78,28 +75,38 @@ Public Class SelectTeacher
             .ValueMember = "teacher_id"
         End With
 
-        ComboBox4.ResetText()
-    End Sub
+        'filling subject options
+        Dim subjectQuery As String = "select subject_id, subject_name from subjects where course_id = " + course_id.ToString() + ";"
 
-    Private Sub ComboBox4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox4.SelectedIndexChanged
-        Button1.Enabled = True
+        Dim daS As New MySqlDataAdapter(subjectQuery, Conn)
+        Dim dtS As New DataTable
+
+        daS.Fill(dtS)
+        ComboBox5.DataSource = dtS
+        With ComboBox5
+            .DisplayMember = "subject_name"
+            .ValueMember = "subject_id"
+        End With
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         'take the selected value to the next page
         Try
             Dim teacher_id As Int32 = Convert.ToInt32(ComboBox4.SelectedValue.GetHashCode())
+            Console.WriteLine("teacher id is " & teacher_id.ToString)
+            Dim subject_id As Int32 = Convert.ToInt32(ComboBox5.SelectedValue.GetHashCode())
+            Console.WriteLine("subject_id is " & subject_id)
             FeedbackForm.teacher_id = teacher_id.ToString("00")
+            FeedbackForm.subject_id = subject_id.ToString()
             FeedbackForm.teacher_name = ComboBox4.Text
+            FeedbackForm.subject_name = ComboBox5.Text
             FeedbackForm.conn = Conn
-            'FeedbackForm.student_name = TextBox1.Text
-            Console.WriteLine("teacher name is " + ComboBox4.Text)
-            Console.WriteLine("teacherid is " + teacher_id.ToString("00"))
 
             Me.Hide()
             FeedbackForm.Show()
         Catch ex As Exception
-            MessageBox.Show("Teacher not selected")
+            MessageBox.Show("Teacher or Subject not selected")
         End Try
     End Sub
 
@@ -108,7 +115,7 @@ Public Class SelectTeacher
         Form1.Show()
     End Sub
 
-    Private Sub ComboBox1_KeyUp(sender As Object, e As KeyEventArgs) Handles ComboBox4.KeyUp, ComboBox3.KeyUp, ComboBox2.KeyUp, ComboBox1.KeyUp
+    Private Sub ComboBox1_KeyUp(sender As Object, e As KeyEventArgs) Handles ComboBox4.KeyUp, ComboBox3.KeyUp, ComboBox2.KeyUp, ComboBox1.KeyUp, ComboBox5.KeyUp
         If e.KeyCode = Keys.Enter Then
             e.Handled = True
             SendKeys.Send("{TAB}")
