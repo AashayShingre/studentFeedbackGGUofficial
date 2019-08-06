@@ -20,6 +20,7 @@ Public Class Form1
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         SelectTeacher.Conn = Conn
+        SelectTeacher.Type = "Subject"
         SelectTeacher.Show()
     End Sub
 
@@ -31,5 +32,26 @@ Public Class Form1
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         viewstats.Conn = Conn
         viewstats.Show()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        SelectTeacher.Conn = Conn
+        SelectTeacher.Type = "Practical"
+        SelectTeacher.Show()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        ViewLabStats.Conn = Conn
+        ViewLabStats.Show()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        SelectCourse.Conn = Conn
+        SelectCourse.Show()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        ViewStatsOverall.Conn = Conn
+        ViewStatsOverall.Show()
     End Sub
 End Class

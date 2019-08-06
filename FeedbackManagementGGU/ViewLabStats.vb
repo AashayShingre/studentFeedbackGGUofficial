@@ -1,13 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.Drawing.Printing
 
-Public Class viewstats
+Public Class ViewLabStats
     Public Property Conn As MySqlConnection
-    Public Property current_name As String
-    Public Property school_name As String
-    Public Property dept_name As String
-    Public Property course_name As String
-    Public Property current_id As Int32
 
     Public Property PropCounts As New List(Of Integer)
     Dim x As Integer = 0
@@ -17,11 +12,6 @@ Public Class viewstats
     End Function
 
     Public Sub ExecuteAndDraw(sqlQuery As String)
-
-        Console.WriteLine(x.ToString + ". ExecuteAndDraw with Query:")
-        x += 1
-        Console.WriteLine(sqlQuery)
-
         PropCounts.Clear()
 
         Dim cmd As New MySqlCommand(sqlQuery, Me.Conn)
@@ -29,7 +19,7 @@ Public Class viewstats
         Try
             dr = cmd.ExecuteReader()
             While dr.Read
-                For i As Integer = 0 To 43
+                For i As Integer = 0 To (15 * 4 - 1)
                     PropCounts.Add(dr(i))
                     Console.WriteLine(dr(i))
                 Next
@@ -43,6 +33,7 @@ Public Class viewstats
                 If TypeOf TableLayoutPanel1.Controls.Item(I) Is DataVisualization.Charting.Chart Then
                     Dim Chrt As DataVisualization.Charting.Chart = CType(TableLayoutPanel1.Controls.Item(I), DataVisualization.Charting.Chart)
                     Console.WriteLine("at chart " & Chrt.Text)
+                    Chrt.ResetAutoValues()
                     'set all four data points within
                     For k As Integer = 0 To 3
                         Chrt.Series("Series1").Points(k).SetValueY(PropCounts(ChartCount * 4 + k))
@@ -58,7 +49,7 @@ Public Class viewstats
 
             'calculate cumulative whatnot and put it in label
             Label11.Text = CumulativeScore.ToString(".00")
-            Dim percentile As Decimal = CumulativeScore * (100) / 55
+            Dim percentile As Decimal = CumulativeScore * (100) / 75
             Label7.Text = percentile.ToString("N2")
             If percentile >= 75 Then
                 Label9.Text = "A"
@@ -70,7 +61,7 @@ Public Class viewstats
                 Label9.Text = "Very Poor"
             End If
 
-            Label15.Text = PropCounts.GetRange(0, 4).Sum.ToString()
+            Label16.Text = PropCounts.GetRange(0, 4).Sum.ToString()
         Catch ex As Exception
             'clear all chart areas
             For I As Integer = 0 To TableLayoutPanel1.Controls.Count - 1
@@ -87,8 +78,8 @@ Public Class viewstats
             Label11.Text = "No records."
             Label7.Text = "No records."
             Label9.Text = "No records."
-            Label15.Text = "0"
-            Label16.Text = ""
+            Label16.Text = "0"
+            Label14.Text = ""
             MessageBox.Show("No records found for particular selection.")
             Console.WriteLine(ex.Message)
         Finally
@@ -96,7 +87,7 @@ Public Class viewstats
         End Try
     End Sub
 
-    Private Sub viewstats_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub ViewLabStats_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckBox1.Checked = True
     End Sub
 
@@ -145,8 +136,12 @@ Public Class viewstats
                                sum(prop8_vg), sum(prop8_g), sum(prop8_s), sum(prop8_b),
                                sum(prop9_vg), sum(prop9_g), sum(prop9_s), sum(prop9_b),
                                sum(prop10_vg), sum(prop10_g), sum(prop10_s), sum(prop10_b),
-                               sum(prop11_vg), sum(prop11_g), sum(prop11_s), sum(prop11_b)
-                         from feedbacks where subject_id in (select subject_id from subjects where course_id in (select course_id from courses where dept_id in (select dept_id from departments where school_id in (select school_id from schools))));"
+                               sum(prop11_vg), sum(prop11_g), sum(prop11_s), sum(prop11_b),
+                               sum(prop12_vg), sum(prop12_g), sum(prop12_s), sum(prop12_b),
+                               sum(prop13_vg), sum(prop13_g), sum(prop13_s), sum(prop13_b),
+                               sum(prop14_vg), sum(prop14_g), sum(prop14_s), sum(prop14_b),
+                               sum(prop15_vg), sum(prop15_g), sum(prop15_s), sum(prop15_b)
+                         from labfeedbacks where subject_id in (select subject_id from subjects where course_id in (select course_id from courses where dept_id in (select dept_id from departments where school_id in (select school_id from schools))));"
 
             ExecuteAndDraw(SqlQuery)
 
@@ -264,7 +259,7 @@ Public Class viewstats
                 Dim teacher_id As Int32 = Convert.ToInt32(ComboBox4.SelectedValue.GetHashCode())
 
                 'filling subject options
-                Dim subjectQuery As String = "select subject_id, subject_name from subjects where subject_id in (select subject_id from feedbacks where teacher_id = " & teacher_id.ToString() & ");"
+                Dim subjectQuery As String = "select subject_id, subject_name from subjects where subject_id in (select subject_id from labfeedbacks where teacher_id = " & teacher_id.ToString() & ");"
 
                 Dim daS As New MySqlDataAdapter(subjectQuery, Conn)
                 Dim dtS As New DataTable
@@ -293,7 +288,6 @@ Public Class viewstats
         'school selected
         Dim school_id As Int32 = Convert.ToInt32(ComboBox1.SelectedValue.GetHashCode())
         Console.WriteLine("School_id:" + school_id.ToString)
-        Console.WriteLine("School_name:" + school_name)
         Dim sqlQuery As String = "select sum(prop1_vg), sum(prop1_g), sum(prop1_s), sum(prop1_b),
                                sum(prop2_vg), sum(prop2_g), sum(prop2_s), sum(prop2_b),
                                sum(prop3_vg), sum(prop3_g), sum(prop3_s), sum(prop3_b),
@@ -304,8 +298,12 @@ Public Class viewstats
                                sum(prop8_vg), sum(prop8_g), sum(prop8_s), sum(prop8_b),
                                sum(prop9_vg), sum(prop9_g), sum(prop9_s), sum(prop9_b),
                                sum(prop10_vg), sum(prop10_g), sum(prop10_s), sum(prop10_b),
-                               sum(prop11_vg), sum(prop11_g), sum(prop11_s), sum(prop11_b)
-                         from feedbacks where subject_id in (select subject_id from subjects where course_id in (select course_id from courses where dept_id in (select dept_id from departments where school_id = " & school_id.ToString() & ")));"
+                               sum(prop11_vg), sum(prop11_g), sum(prop11_s), sum(prop11_b),
+                               sum(prop12_vg), sum(prop12_g), sum(prop12_s), sum(prop12_b),
+                               sum(prop13_vg), sum(prop13_g), sum(prop13_s), sum(prop13_b),
+                               sum(prop14_vg), sum(prop14_g), sum(prop14_s), sum(prop14_b),
+                               sum(prop15_vg), sum(prop15_g), sum(prop15_s), sum(prop15_b)
+                         from labfeedbacks where subject_id in (select subject_id from subjects where course_id in (select course_id from courses where dept_id in (select dept_id from departments where school_id = " & school_id.ToString() & ")));"
 
         ExecuteAndDraw(sqlQuery)
     End Sub
@@ -328,8 +326,12 @@ Public Class viewstats
                                sum(prop8_vg), sum(prop8_g), sum(prop8_s), sum(prop8_b),
                                sum(prop9_vg), sum(prop9_g), sum(prop9_s), sum(prop9_b),
                                sum(prop10_vg), sum(prop10_g), sum(prop10_s), sum(prop10_b),
-                               sum(prop11_vg), sum(prop11_g), sum(prop11_s), sum(prop11_b)
-                         from feedbacks where subject_id in (select subject_id from subjects where course_id in (select course_id from courses where dept_id = " & dept_id.ToString() & "));"
+                               sum(prop11_vg), sum(prop11_g), sum(prop11_s), sum(prop11_b),
+                               sum(prop12_vg), sum(prop12_g), sum(prop12_s), sum(prop12_b),
+                               sum(prop13_vg), sum(prop13_g), sum(prop13_s), sum(prop13_b),
+                               sum(prop14_vg), sum(prop14_g), sum(prop14_s), sum(prop14_b),
+                               sum(prop15_vg), sum(prop15_g), sum(prop15_s), sum(prop15_b)
+                         from labfeedbacks where subject_id in (select subject_id from subjects where course_id in (select course_id from courses where dept_id = " & dept_id.ToString() & "));"
 
         ExecuteAndDraw(sqlQuery)
     End Sub
@@ -351,8 +353,12 @@ Public Class viewstats
                                sum(prop8_vg), sum(prop8_g), sum(prop8_s), sum(prop8_b),
                                sum(prop9_vg), sum(prop9_g), sum(prop9_s), sum(prop9_b),
                                sum(prop10_vg), sum(prop10_g), sum(prop10_s), sum(prop10_b),
-                               sum(prop11_vg), sum(prop11_g), sum(prop11_s), sum(prop11_b)
-                         from feedbacks where subject_id in (select subject_id from subjects where course_id = " & course_id.ToString() & ");"
+                               sum(prop11_vg), sum(prop11_g), sum(prop11_s), sum(prop11_b),
+                               sum(prop12_vg), sum(prop12_g), sum(prop12_s), sum(prop12_b),
+                               sum(prop13_vg), sum(prop13_g), sum(prop13_s), sum(prop13_b),
+                               sum(prop14_vg), sum(prop14_g), sum(prop14_s), sum(prop14_b),
+                               sum(prop15_vg), sum(prop15_g), sum(prop15_s), sum(prop15_b)
+                         from labfeedbacks where subject_id in (select subject_id from subjects where course_id = " & course_id.ToString() & ");"
 
         ExecuteAndDraw(sqlQuery)
     End Sub
@@ -372,8 +378,12 @@ Public Class viewstats
                                sum(prop8_vg), sum(prop8_g), sum(prop8_s), sum(prop8_b),
                                sum(prop9_vg), sum(prop9_g), sum(prop9_s), sum(prop9_b),
                                sum(prop10_vg), sum(prop10_g), sum(prop10_s), sum(prop10_b),
-                               sum(prop11_vg), sum(prop11_g), sum(prop11_s), sum(prop11_b)
-                         from feedbacks where teacher_id = " & teacher_id.ToString() & ";"
+                               sum(prop11_vg), sum(prop11_g), sum(prop11_s), sum(prop11_b),
+                               sum(prop12_vg), sum(prop12_g), sum(prop12_s), sum(prop12_b),
+                               sum(prop13_vg), sum(prop13_g), sum(prop13_s), sum(prop13_b),
+                               sum(prop14_vg), sum(prop14_g), sum(prop14_s), sum(prop14_b),
+                               sum(prop15_vg), sum(prop15_g), sum(prop15_s), sum(prop15_b)
+                         from labfeedbacks where teacher_id = " & teacher_id.ToString() & ";"
 
         ExecuteAndDraw(sqlQuery)
     End Sub
@@ -391,8 +401,12 @@ Public Class viewstats
                                 prop8_vg, prop8_g, prop8_s, prop8_b,
                                 prop9_vg, prop9_g, prop9_s, prop9_b,
                                 prop10_vg, prop10_g, prop10_s, prop10_b,
-                                prop11_vg, prop11_g, prop11_s, prop11_b
-                        from feedbacks where teacher_id = " & teacher_id.ToString() & " and subject_id = " & subject_id.ToString() & ";"
+                                prop11_vg, prop11_g, prop11_s, prop11_b,
+                                prop12_vg, prop12_g, prop12_s, prop12_b,
+                                prop13_vg, prop13_g, prop13_s, prop13_b,
+                                prop14_vg, prop14_g, prop14_s, prop14_b,
+                                prop15_vg, prop15_g, prop15_s, prop15_b
+                        from labfeedbacks where teacher_id = " & teacher_id.ToString() & " and subject_id = " & subject_id.ToString() & ";"
 
         ExecuteAndDraw(sqlQuery)
 
@@ -404,7 +418,7 @@ Public Class viewstats
         Try
             dr = cmd.ExecuteReader()
             While dr.Read
-                Label16.Text = "[SUBJECT DETAILS: School-" & dr(0).ToString() & ", Department-" & dr(1).ToString() & ", Course-" & dr(2).ToString() & ", Semester-" & dr(3).ToString() & ", Session - 2018-19]"
+                Label14.Text = "[SUBJECT DETAILS: School-" & dr(0).ToString() & ", Department-" & dr(1).ToString() & ", Course-" & dr(2).ToString() & ", Semester-" & dr(3).ToString() & ", Session - 2018-19]"
             End While
             dr.Close()
         Catch ex As Exception

@@ -34,6 +34,9 @@ Partial Class Form5
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -62,9 +65,9 @@ Partial Class Form5
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(49, 311)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(68, 23)
+        Me.Label3.Size = New System.Drawing.Size(71, 23)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "course"
+        Me.Label3.Text = "Course"
         '
         'Label4
         '
@@ -89,7 +92,7 @@ Partial Class Form5
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(36, 450)
+        Me.Button1.Location = New System.Drawing.Point(34, 499)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(160, 63)
         Me.Button1.TabIndex = 5
@@ -99,7 +102,7 @@ Partial Class Form5
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Bahnschrift", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(545, 450)
+        Me.Button2.Location = New System.Drawing.Point(547, 499)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(152, 63)
         Me.Button2.TabIndex = 6
@@ -154,11 +157,41 @@ Partial Class Form5
         Me.LinkLabel1.Text = "<< Back"
         Me.LinkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Bahnschrift", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(49, 370)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(92, 23)
+        Me.Label6.TabIndex = 12
+        Me.Label6.Text = "Semester"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Font = New System.Drawing.Font("Bahnschrift", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(220, 367)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(49, 29)
+        Me.TextBox2.TabIndex = 13
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.Font = New System.Drawing.Font("Bahnschrift", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Location = New System.Drawing.Point(220, 367)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(97, 30)
+        Me.ComboBox4.TabIndex = 14
+        '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(754, 555)
+        Me.ClientSize = New System.Drawing.Size(754, 586)
+        Me.Controls.Add(Me.ComboBox4)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ComboBox3)
@@ -190,4 +223,7 @@ Partial Class Form5
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Label6 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents ComboBox4 As ComboBox
 End Class

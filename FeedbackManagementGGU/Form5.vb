@@ -4,6 +4,7 @@ Public Class Form5
     Public Property conn As MySqlConnection
     Public Property type As String
     Public Property current_name As String
+    Public Property current_id As Int32
 
     Public Property school_name As String
     Public Property school_table As DataTable = Nothing
@@ -14,7 +15,8 @@ Public Class Form5
     Public Property course_name As String
     Public Property course_table As DataTable = Nothing
 
-    Public Property current_id As Int32
+    Public Property semester As Integer
+    Public Property selected_sem As Integer
 
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Console.WriteLine("current_name is " & current_name)
@@ -51,20 +53,62 @@ Public Class Form5
 
         If type = "School" Then
             ComboBox1.Visible = False
+            Label5.Visible = False
             ComboBox2.Visible = False
+            Label4.Visible = False
             ComboBox3.Visible = False
+            Label3.Visible = False
+            TextBox2.Visible = False
+            Label6.Visible = False
+            ComboBox4.Visible = False
         ElseIf type = "Department" Then
             ComboBox1.Visible = True
             ComboBox2.Visible = False
             ComboBox3.Visible = False
+            TextBox2.Visible = False
+            ComboBox4.Visible = False
+            Label5.Visible = True
+            Label4.Visible = False
+            Label3.Visible = False
+            Label6.Visible = False
         ElseIf type = "Course" Then
             ComboBox1.Visible = True
             ComboBox2.Visible = True
             ComboBox3.Visible = False
+            TextBox2.Visible = True
+            TextBox2.Text = semester
+            ComboBox4.Visible = False
+            Label5.Visible = True
+            Label4.Visible = True
+            Label3.Visible = False
+            Label6.Visible = True
+            Label6.Text = "No. of Sems"
         Else
             ComboBox1.Visible = True
             ComboBox2.Visible = True
             ComboBox3.Visible = True
+            ComboBox4.Visible = False
+            TextBox2.Visible = False
+            Label6.Visible = False
+
+            If type = "Subject" Then
+                TextBox2.Visible = True
+                Label6.Visible = True
+                Label6.Text = "Semester"
+                ComboBox4.Visible = True
+                'now fill the combobox
+                Dim Semester_Names() As String = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX"}
+
+
+                ComboBox4.Items.Clear()
+                ComboBox4.MaxDropDownItems = semester
+
+                For i = 0 To semester - 1
+                    ComboBox4.Items.Add(Semester_Names(i))
+                Next
+
+                ComboBox4.SelectedIndex = selected_sem - 1
+            End If
         End If
     End Sub
 
@@ -88,7 +132,7 @@ Public Class Form5
             cmd.ExecuteNonQuery()
         ElseIf type = "Course" Then
             Dim dept_id As Int32 = Convert.ToInt32(ComboBox2.SelectedValue.GetHashCode())
-            Dim sqlquery As String = "update courses set course_name = """ & TextBox1.Text & """, dept_id = " & dept_id.ToString() & " where course_id = " & current_id.ToString() & " ;"
+            Dim sqlquery As String = "update courses set course_name = """ & TextBox1.Text & """, semester_count = " & TextBox2.Text & ", dept_id = " & dept_id.ToString() & " where course_id = " & current_id.ToString() & " ;"
             Console.WriteLine(sqlquery)
             Dim cmd As New MySqlCommand(sqlquery, conn)
             cmd.ExecuteNonQuery()
@@ -100,7 +144,7 @@ Public Class Form5
             cmd.ExecuteNonQuery()
         Else type = "Subject"
             Dim course_id As Int32 = Convert.ToInt32(ComboBox3.SelectedValue.GetHashCode())
-            Dim sqlquery As String = "update subjects set subject_name = """ & TextBox1.Text & """, course_id = " & course_id.ToString() & " where teacher_id = " & current_id.ToString() & " ;"
+            Dim sqlquery As String = "update subjects set subject_name = """ & TextBox1.Text & """, semester = " & ComboBox4.SelectedIndex + 1 & ", course_id = " & course_id.ToString() & " where subject_id = " & current_id.ToString() & " ;"
             Console.WriteLine(sqlquery)
             Dim cmd As New MySqlCommand(sqlquery, conn)
             cmd.ExecuteNonQuery()
@@ -108,6 +152,7 @@ Public Class Form5
 
         MessageBox.Show("Successfully updated")
         Me.Close()
+        Manage.Refresh()
         Manage.Show()
     End Sub
 

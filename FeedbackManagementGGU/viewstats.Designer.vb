@@ -136,7 +136,10 @@ Partial Class viewstats
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
@@ -184,6 +187,7 @@ Partial Class viewstats
         Me.TableLayoutPanel1.Controls.Add(Me.Label13, 1, 6)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel7, 2, 5)
         Me.TableLayoutPanel1.Controls.Add(Me.Button2, 2, 6)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label16, 2, 1)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -216,19 +220,22 @@ Partial Class viewstats
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label5.Location = New System.Drawing.Point(38, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(55, 17)
+        Me.Label5.Size = New System.Drawing.Size(73, 29)
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Subject"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ComboBox5
         '
+        Me.ComboBox5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBox5.Enabled = False
         Me.ComboBox5.FormattingEnabled = True
         Me.ComboBox5.Location = New System.Drawing.Point(117, 3)
         Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(222, 24)
+        Me.ComboBox5.Size = New System.Drawing.Size(248, 24)
         Me.ComboBox5.TabIndex = 1
         '
         'Chart1
@@ -642,35 +649,38 @@ Partial Class viewstats
         'TableLayoutPanel2
         '
         Me.TableLayoutPanel2.ColumnCount = 3
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.15385!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.84615!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 239.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 207.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.85185!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.14815!))
         Me.TableLayoutPanel2.Controls.Add(Me.ComboBox1, 2, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label1, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.CheckBox1, 0, 0)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(368, 29)
         Me.TableLayoutPanel2.TabIndex = 11
         '
         'ComboBox1
         '
+        Me.ComboBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(131, 3)
+        Me.ComboBox1.Location = New System.Drawing.Point(293, 3)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(216, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(72, 24)
         Me.ComboBox1.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(62, 0)
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.Location = New System.Drawing.Point(210, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 17)
+        Me.Label1.Size = New System.Drawing.Size(77, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "School:"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'CheckBox1
         '
@@ -678,17 +688,17 @@ Partial Class viewstats
         Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox1.Location = New System.Drawing.Point(3, 3)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(48, 21)
+        Me.CheckBox1.Size = New System.Drawing.Size(199, 21)
         Me.CheckBox1.TabIndex = 2
-        Me.CheckBox1.Text = "All"
+        Me.CheckBox1.Text = "University (All Schools)"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'TableLayoutPanel3
         '
         Me.TableLayoutPanel3.ColumnCount = 3
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 33.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.40525!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.59475!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.65672!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.34328!))
         Me.TableLayoutPanel3.Controls.Add(Me.Label2, 1, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.ComboBox2, 2, 0)
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(377, 3)
@@ -701,19 +711,22 @@ Partial Class viewstats
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label2.Location = New System.Drawing.Point(36, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(82, 29)
+        Me.Label2.Size = New System.Drawing.Size(90, 29)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Department:"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ComboBox2
         '
+        Me.ComboBox2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBox2.Enabled = False
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(127, 3)
+        Me.ComboBox2.Location = New System.Drawing.Point(132, 3)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(222, 24)
+        Me.ComboBox2.Size = New System.Drawing.Size(233, 24)
         Me.ComboBox2.TabIndex = 1
         '
         'TableLayoutPanel4
@@ -734,27 +747,30 @@ Partial Class viewstats
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label3.Location = New System.Drawing.Point(45, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(57, 17)
+        Me.Label3.Size = New System.Drawing.Size(63, 29)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Course:"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ComboBox3
         '
+        Me.ComboBox3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBox3.Enabled = False
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Location = New System.Drawing.Point(114, 3)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(222, 24)
+        Me.ComboBox3.Size = New System.Drawing.Size(251, 24)
         Me.ComboBox3.TabIndex = 1
         '
         'TableLayoutPanel5
         '
         Me.TableLayoutPanel5.ColumnCount = 3
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.0625!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.9375!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.32432!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.67567!))
         Me.TableLayoutPanel5.Controls.Add(Me.Label4, 1, 0)
         Me.TableLayoutPanel5.Controls.Add(Me.ComboBox4, 2, 0)
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(3, 38)
@@ -767,19 +783,22 @@ Partial Class viewstats
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label4.Location = New System.Drawing.Point(38, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(61, 17)
+        Me.Label4.Size = New System.Drawing.Size(74, 29)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Teacher"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ComboBox4
         '
+        Me.ComboBox4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBox4.Enabled = False
         Me.ComboBox4.FormattingEnabled = True
         Me.ComboBox4.Location = New System.Drawing.Point(118, 3)
         Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(222, 24)
+        Me.ComboBox4.Size = New System.Drawing.Size(247, 24)
         Me.ComboBox4.TabIndex = 1
         '
         'Label12
@@ -815,10 +834,13 @@ Partial Class viewstats
         Me.TableLayoutPanel7.Controls.Add(Me.Label10, 0, 3)
         Me.TableLayoutPanel7.Controls.Add(Me.Label7, 1, 1)
         Me.TableLayoutPanel7.Controls.Add(Me.Label8, 0, 2)
+        Me.TableLayoutPanel7.Controls.Add(Me.Label14, 0, 4)
+        Me.TableLayoutPanel7.Controls.Add(Me.Label15, 1, 4)
         Me.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel7.Location = New System.Drawing.Point(751, 520)
         Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
-        Me.TableLayoutPanel7.RowCount = 5
+        Me.TableLayoutPanel7.RowCount = 6
+        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
@@ -893,6 +915,28 @@ Partial Class viewstats
         Me.Label8.TabIndex = 2
         Me.Label8.Text = "Grade:"
         '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Label14.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(59, 120)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(208, 30)
+        Me.Label14.TabIndex = 6
+        Me.Label14.Text = "Number of Feedbacks:"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Label15.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(288, 120)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(77, 30)
+        Me.Label15.TabIndex = 7
+        Me.Label15.Text = "answer"
+        '
         'Button2
         '
         Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
@@ -903,6 +947,14 @@ Partial Class viewstats
         Me.Button2.TabIndex = 17
         Me.Button2.Text = "SAVE AS PNG"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(751, 35)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(0, 17)
+        Me.Label16.TabIndex = 20
         '
         'SaveFileDialog1
         '
@@ -915,7 +967,7 @@ Partial Class viewstats
         Me.ClientSize = New System.Drawing.Size(1122, 736)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Name = "viewstats"
-        Me.Text = "View Statistics - Subject/Course Wise"
+        Me.Text = "View Statistics (Subject/Course Wise)"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
@@ -985,4 +1037,7 @@ Partial Class viewstats
     Friend WithEvents Label13 As Label
     Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
 End Class
