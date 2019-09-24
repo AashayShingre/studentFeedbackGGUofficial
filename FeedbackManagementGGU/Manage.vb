@@ -8,7 +8,7 @@ Public Class Manage
         Me.Close()
     End Sub
 
-    Public Sub Refresh()
+    Public Sub RefreshPage()
         Try
             'load the school names
             Dim SchoolQuery = "select * from schools"
@@ -34,7 +34,7 @@ Public Class Manage
 
 
         Catch ex As Exception
-            MessageBox.Show("Cannot connect to the database. Please reopen the page.")
+            MessageBox.Show("Try reopening the page. Error : " + ex.Message, "Error retrieving Schools", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Me.Close()
 
         Finally
@@ -54,7 +54,7 @@ Public Class Manage
 
     Private Sub Manage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ListBox1.SelectedIndex = 3
-        Refresh()
+        RefreshPage()
     End Sub
 
     Private Sub ComboBox1_Selected(sender As Object, e As EventArgs) Handles ComboBox1.SelectionChangeCommitted
@@ -303,7 +303,7 @@ Public Class Manage
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         If TextBox1.Text = "" Then
-            MessageBox.Show("Enter names in the box")
+            MessageBox.Show("Enter names in the text-box", "Incorrect Entry", MessageBoxButtons.OK, MessageBoxIcon.Hand)
             Exit Sub
         End If
 
@@ -333,7 +333,8 @@ Public Class Manage
                 Try
                     sem_count = strarr(0).Split(";")(1).Trim
                 Catch
-                    MessageBox.Show("Course should be posted in the format - ""Course Name"" ; ""Number of Semesters in the course""")
+                    MessageBox.Show("Course should be posted in the format - ""Course Name"" ; ""Number of Semesters in the course""", "Error Adding Course", MessageBoxButtons.OK, MessageBoxIcon.Hand)
+                    Exit Sub
                 End Try
                 Dim contstr As String = "(""" + course_name + """, " & sem_count & ", " & dept_id.ToString() & ")"
                 For i = 1 To strarr.Length - 1
@@ -354,9 +355,15 @@ Public Class Manage
             ElseIf ListBox1.Text = "Subject" Then
                 Dim course_id As Int32 = Convert.ToInt32(ComboBox7.SelectedValue.GetHashCode())
                 Dim subject_name As String = strarr(0).Split(";")(0).Trim
-                Dim semester As String = strarr(0).Split(";")(1).Trim
+                Dim semester As String
+                Try
+                    semester = strarr(0).Split(";")(1).Trim
+                Catch
+                    MessageBox.Show("Subjects should be posted in the format - ""Subject Name"" ; ""Semester it belongs to""", "Error Adding Course", MessageBoxButtons.OK, MessageBoxIcon.Hand)
+                    Exit Sub
+                End Try
                 Dim contstr As String = "(""" + subject_name + """, " & semester & ", " & course_id.ToString() & ")"
-                For i = 1 To strarr.Length - 1
+                    For i = 1 To strarr.Length - 1
                     subject_name = strarr(i).Split(";")(0).Trim
                     semester = strarr(i).Split(";")(1).Trim
                     contstr = contstr & ", (""" + subject_name + """, " & semester & ", " & course_id.ToString() & ")"
@@ -365,13 +372,13 @@ Public Class Manage
                 cmd.ExecuteNonQuery()
             End If
 
-            MessageBox.Show(ListBox1.Text & "(s) added successfully.")
+            MessageBox.Show(ListBox1.Text & "(s) added successfully.", "Success.", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            RefreshPage()
+
         Catch excep As Exception
-            MessageBox.Show("Error adding " & ListBox1.Text)
+            MessageBox.Show("Error message: " + excep.Message, "Error adding " & ListBox1.Text, MessageBoxButtons.OK, MessageBoxIcon.Error)
             Console.WriteLine(excep.Message)
         End Try
-
-        Refresh()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -422,7 +429,7 @@ Public Class Manage
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim d As DialogResult = MessageBox.Show("Are you sure you want to delete? This will also remove all the associated data/feedbacks. This change cannot be reversed.", "Comfirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim d As DialogResult = MessageBox.Show("Are you sure you want to delete? This will also remove all the associated data/feedbacks. This change cannot be reversed.", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
         If d = DialogResult.Yes Then
             Try
@@ -430,7 +437,6 @@ Public Class Manage
                     Dim school_id As Int32 = Convert.ToInt32(ComboBox1.SelectedValue.GetHashCode())
                     Dim cmd As New MySqlCommand("delete from schools where school_id = " + school_id.ToString() + ";", conn)
                     cmd.ExecuteNonQuery()
-
                 ElseIf ListBox1.Text = "Department" Then
                     Dim dept_id As Int32 = Convert.ToInt32(ComboBox2.SelectedValue.GetHashCode())
                     Dim cmd As New MySqlCommand("delete from departments where dept_id = " + dept_id.ToString() + ";", conn)
@@ -456,9 +462,10 @@ Public Class Manage
                     Dim cmd3 As New MySqlCommand("delete from labfeedbacks where subject_id = " + subject_id.ToString() + ";", conn)
                     cmd3.ExecuteNonQuery()
                 End If
-                Refresh()
+                RefreshPage()
             Catch ex As Exception
-                MessageBox.Show("Error occurred while deleting. Please make sure you have all the selections.")
+                Console.WriteLine(ex.Message)
+                MessageBox.Show("Please make sure you have all the selections. Error message: " + ex.Message, "Error Occurred while deleting", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
         End If
     End Sub
@@ -466,14 +473,6 @@ Public Class Manage
     Private Sub ComboBox_KeyDown(sender As Object, e As KeyEventArgs) Handles ComboBox8.KeyDown, ComboBox4.KeyDown, ComboBox3.KeyDown, ComboBox2.KeyDown, ComboBox1.KeyDown, ComboBox5.KeyDown, ComboBox6.KeyDown, ComboBox7.KeyDown
         Dim cb As ComboBox = CType(sender, ComboBox)
         If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{TAB}")
-        End If
-    End Sub
-
-    Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            e.Handled = True
-            e.SuppressKeyPress = True
             SendKeys.Send("{TAB}")
         End If
     End Sub

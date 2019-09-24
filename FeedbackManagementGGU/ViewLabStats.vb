@@ -72,6 +72,7 @@ Public Class ViewLabStats
                     For k As Integer = 0 To 3
                         Chrt.Series("Series1").Points(k).SetValueY(0)
                     Next
+                    Chrt.Series("Series1").LegendText = "Avg: 00.00"
                 End If
             Next
             'clear labels
@@ -89,6 +90,15 @@ Public Class ViewLabStats
 
     Private Sub ViewLabStats_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckBox1.Checked = True
+        For I As Integer = 0 To TableLayoutPanel1.Controls.Count - 1
+            If TypeOf TableLayoutPanel1.Controls.Item(I) Is DataVisualization.Charting.Chart Then
+                Dim Chrt As DataVisualization.Charting.Chart = CType(TableLayoutPanel1.Controls.Item(I), DataVisualization.Charting.Chart)
+                Chrt.Series(0).Points(0).Color = Color.Green
+                Chrt.Series(0).Points(1).Color = Color.CornflowerBlue
+                Chrt.Series(0).Points(2).Color = Color.DarkOrange
+                Chrt.Series(0).Points(3).Color = Color.Red
+            End If
+        Next
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -101,6 +111,33 @@ Public Class ViewLabStats
         lRect.Height = Me.Height
 
         Button2.Visible = False
+        If CheckBox1.Checked Then
+            Label1.Visible = False
+            ComboBox1.Visible = False
+            TableLayoutPanel3.Visible = False
+            TableLayoutPanel4.Visible = False
+            TableLayoutPanel5.Visible = False
+            TableLayoutPanel6.Visible = False
+        Else
+            CheckBox1.Visible = False
+
+            If ComboBox2.Text = "" Then
+                TableLayoutPanel3.Visible = False
+            End If
+
+            If ComboBox3.Text = "" Then
+                TableLayoutPanel4.Visible = False
+            End If
+
+            If ComboBox4.Text = "" Then
+                TableLayoutPanel5.Visible = False
+            End If
+
+            If ComboBox5.Text = "" Then
+                TableLayoutPanel6.Visible = False
+            End If
+        End If
+
         Me.DrawToBitmap(mPrintBitMap, lRect)
 
         Dim newBitMap As New Bitmap(mPrintBitMap)
@@ -112,6 +149,13 @@ Public Class ViewLabStats
         End If
 
         Button2.Visible = True
+        Label1.Visible = True
+        CheckBox1.Visible = True
+        ComboBox1.Visible = True
+        TableLayoutPanel3.Visible = True
+        TableLayoutPanel4.Visible = True
+        TableLayoutPanel5.Visible = True
+        TableLayoutPanel6.Visible = True
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
@@ -274,6 +318,8 @@ Public Class ViewLabStats
                 MessageBox.Show("Select Teacher first.")
                 ComboBox5.Enabled = False
             End Try
+        Else
+            Label14.Text = "--"
         End If
         ComboBox5.ResetText()
     End Sub

@@ -30,6 +30,7 @@ Partial Class SelectTeacher
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -41,7 +42,6 @@ Partial Class SelectTeacher
         Me.ComboBox10 = New System.Windows.Forms.ComboBox()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -187,6 +187,19 @@ Partial Class SelectTeacher
         Me.Label8.Size = New System.Drawing.Size(78, 48)
         Me.Label8.TabIndex = 4
         Me.Label8.Text = "Subject"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.TableLayoutPanel4.SetColumnSpan(Me.Label13, 2)
+        Me.Label13.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label13.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(3, 0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(553, 55)
+        Me.Label13.TabIndex = 4
+        Me.Label13.Text = "Select Subject"
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label9
         '
@@ -335,19 +348,6 @@ Partial Class SelectTeacher
         Me.Label2.Size = New System.Drawing.Size(73, 48)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "School"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.TableLayoutPanel4.SetColumnSpan(Me.Label13, 2)
-        Me.Label13.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label13.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(3, 0)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(553, 55)
-        Me.Label13.TabIndex = 4
-        Me.Label13.Text = "Select Subject"
-        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label3
         '

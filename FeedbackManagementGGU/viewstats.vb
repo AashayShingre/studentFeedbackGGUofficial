@@ -43,6 +43,7 @@ Public Class viewstats
                 If TypeOf TableLayoutPanel1.Controls.Item(I) Is DataVisualization.Charting.Chart Then
                     Dim Chrt As DataVisualization.Charting.Chart = CType(TableLayoutPanel1.Controls.Item(I), DataVisualization.Charting.Chart)
                     Console.WriteLine("at chart " & Chrt.Text)
+                    Chrt.ResetAutoValues()
                     'set all four data points within
                     For k As Integer = 0 To 3
                         Chrt.Series("Series1").Points(k).SetValueY(PropCounts(ChartCount * 4 + k))
@@ -50,6 +51,7 @@ Public Class viewstats
                     'give average
                     Dim avg As Decimal = GetAverage(PropCounts.GetRange(ChartCount * 4, 4))
                     Chrt.Series("Series1").LegendText = "Avg: " & avg.ToString("N2")
+
                     CumulativeScore += avg
                     'increment count
                     ChartCount += 1
@@ -81,6 +83,7 @@ Public Class viewstats
                     For k As Integer = 0 To 3
                         Chrt.Series("Series1").Points(k).SetValueY(0)
                     Next
+                    Chrt.Series("Series1").LegendText = "Avg: 00.00"
                 End If
             Next
             'clear labels
@@ -98,6 +101,15 @@ Public Class viewstats
 
     Private Sub viewstats_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckBox1.Checked = True
+        For I As Integer = 0 To TableLayoutPanel1.Controls.Count - 1
+            If TypeOf TableLayoutPanel1.Controls.Item(I) Is DataVisualization.Charting.Chart Then
+                Dim Chrt As DataVisualization.Charting.Chart = CType(TableLayoutPanel1.Controls.Item(I), DataVisualization.Charting.Chart)
+                Chrt.Series(0).Points(0).Color = Color.Green
+                Chrt.Series(0).Points(1).Color = Color.CornflowerBlue
+                Chrt.Series(0).Points(2).Color = Color.DarkOrange
+                Chrt.Series(0).Points(3).Color = Color.Red
+            End If
+        Next
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -110,6 +122,34 @@ Public Class viewstats
         lRect.Height = Me.Height
 
         Button2.Visible = False
+
+        If CheckBox1.Checked Then
+            Label1.Visible = False
+            ComboBox1.Visible = False
+            TableLayoutPanel3.Visible = False
+            TableLayoutPanel4.Visible = False
+            TableLayoutPanel5.Visible = False
+            TableLayoutPanel6.Visible = False
+        Else
+            CheckBox1.Visible = False
+
+            If ComboBox2.Text = "" Then
+                TableLayoutPanel3.Visible = False
+            End If
+
+            If ComboBox3.Text = "" Then
+                TableLayoutPanel4.Visible = False
+            End If
+
+            If ComboBox4.Text = "" Then
+                TableLayoutPanel5.Visible = False
+            End If
+
+            If ComboBox5.Text = "" Then
+                TableLayoutPanel6.Visible = False
+            End If
+        End If
+
         Me.DrawToBitmap(mPrintBitMap, lRect)
 
         Dim newBitMap As New Bitmap(mPrintBitMap)
@@ -121,6 +161,13 @@ Public Class viewstats
         End If
 
         Button2.Visible = True
+        Label1.Visible = True
+        CheckBox1.Visible = True
+        ComboBox1.Visible = True
+        TableLayoutPanel3.Visible = True
+        TableLayoutPanel4.Visible = True
+        TableLayoutPanel5.Visible = True
+        TableLayoutPanel6.Visible = True
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
@@ -158,6 +205,7 @@ Public Class viewstats
         ComboBox3.Enabled = False
         ComboBox4.Enabled = False
         ComboBox5.Enabled = False
+        Label16.Text = ""
     End Sub
 
     Private Sub ComboBox1_EnabledChanged(sender As Object, e As EventArgs) Handles ComboBox1.EnabledChanged
@@ -289,7 +337,7 @@ Public Class viewstats
         ComboBox3.Enabled = False
         ComboBox4.Enabled = False
         ComboBox5.Enabled = False
-
+        Label16.Text = ""
         'school selected
         Dim school_id As Int32 = Convert.ToInt32(ComboBox1.SelectedValue.GetHashCode())
         Console.WriteLine("School_id:" + school_id.ToString)
@@ -315,7 +363,7 @@ Public Class viewstats
         ComboBox3.Enabled = True
         ComboBox4.Enabled = False
         ComboBox5.Enabled = False
-
+        Label16.Text = ""
         'department selected
         Dim dept_id As Int32 = Convert.ToInt32(ComboBox2.SelectedValue.GetHashCode())
         Dim sqlQuery As String = "select sum(prop1_vg), sum(prop1_g), sum(prop1_s), sum(prop1_b),
@@ -338,7 +386,7 @@ Public Class viewstats
         ComboBox4.Enabled = False
         ComboBox4.Enabled = True
         ComboBox5.Enabled = False
-
+        Label16.Text = ""
         'course selected
         Dim course_id As Int32 = Convert.ToInt32(ComboBox3.SelectedValue.GetHashCode())
         Dim sqlQuery As String = "select sum(prop1_vg), sum(prop1_g), sum(prop1_s), sum(prop1_b),
@@ -358,6 +406,7 @@ Public Class viewstats
     End Sub
 
     Private Sub ComboBox4_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles ComboBox4.SelectionChangeCommitted
+        Label16.Text = ""
         ComboBox5.Enabled = False
         ComboBox5.Enabled = True
         'teacher selected

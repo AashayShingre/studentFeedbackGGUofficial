@@ -22,118 +22,118 @@ Partial Class ViewStatsOverall
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea17 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend17 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series17 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint65 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint66 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint67 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint68 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea18 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend18 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series18 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint69 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint70 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint71 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint72 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea19 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend19 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series19 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint73 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint74 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint75 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint76 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea20 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend20 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series20 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint77 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint78 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint79 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint80 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea21 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend21 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series21 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint81 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint82 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint83 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint84 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea22 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend22 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series22 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint85 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint86 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint87 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint88 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea23 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend23 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series23 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint89 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint90 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint91 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint92 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea24 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend24 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series24 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint93 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint94 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint95 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint96 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea25 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend25 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series25 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint97 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint98 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint99 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint100 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea26 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend26 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series26 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint101 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint102 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint103 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint104 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea27 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend27 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series27 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint105 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint106 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint107 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint108 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea28 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend28 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series28 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint109 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint110 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint111 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint112 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea29 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend29 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series29 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint113 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint114 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint115 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint116 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea30 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend30 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series30 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint117 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint118 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint119 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint120 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea31 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend31 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series31 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint121 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint122 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint123 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint124 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
-        Dim ChartArea32 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend32 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series32 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint125 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
-        Dim DataPoint126 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
-        Dim DataPoint127 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
-        Dim DataPoint128 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint1 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint2 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint3 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint4 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint5 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint6 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint7 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint8 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint9 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint10 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint11 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint12 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint13 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint14 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint15 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint16 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint17 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint18 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint19 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint20 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint21 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint22 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint23 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint24 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea7 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend7 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint25 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint26 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint27 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint28 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea8 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend8 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series8 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint29 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint30 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint31 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint32 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea9 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend9 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series9 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint33 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint34 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint35 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint36 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea10 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend10 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series10 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint37 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint38 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint39 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint40 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea11 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend11 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series11 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint41 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint42 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint43 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint44 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea12 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend12 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series12 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint45 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint46 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint47 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint48 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea13 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend13 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series13 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint49 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint50 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint51 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint52 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea14 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend14 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series14 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint53 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint54 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint55 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint56 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea15 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend15 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series15 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint57 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint58 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint59 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint60 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
+        Dim ChartArea16 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend16 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series16 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint61 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(1.0R, 20.0R)
+        Dim DataPoint62 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(2.0R, 30.0R)
+        Dim DataPoint63 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(3.0R, 13.0R)
+        Dim DataPoint64 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(4.0R, 8.0R)
         Me.Label16 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -212,9 +212,9 @@ Partial Class ViewStatsOverall
         '
         Me.ComboBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(324, 3)
+        Me.ComboBox1.Location = New System.Drawing.Point(323, 3)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(209, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(210, 24)
         Me.ComboBox1.TabIndex = 1
         '
         'Label15
@@ -274,112 +274,112 @@ Partial Class ViewStatsOverall
         '
         'Chart1
         '
-        ChartArea17.AxisX.IsLabelAutoFit = False
-        ChartArea17.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea17.AxisX.MajorGrid.Enabled = False
-        ChartArea17.AxisX.Title = "Opportunities to develop skills"
-        ChartArea17.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea17.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea17.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea17)
+        ChartArea1.AxisX.IsLabelAutoFit = False
+        ChartArea1.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea1.AxisX.MajorGrid.Enabled = False
+        ChartArea1.AxisX.Title = "Opportunities to develop skills"
+        ChartArea1.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
         Me.Chart1.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend17.Name = "Legend1"
-        Legend17.Position.Auto = False
-        Legend17.Position.Height = 20.42253!
-        Legend17.Position.Width = 25.0!
-        Legend17.Position.X = 75.0!
-        Me.Chart1.Legends.Add(Legend17)
+        Legend1.Name = "Legend1"
+        Legend1.Position.Auto = False
+        Legend1.Position.Height = 20.42253!
+        Legend1.Position.Width = 25.0!
+        Legend1.Position.X = 75.0!
+        Me.Chart1.Legends.Add(Legend1)
         Me.Chart1.Location = New System.Drawing.Point(3, 38)
         Me.Chart1.Name = "Chart1"
-        Series17.ChartArea = "ChartArea1"
-        Series17.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series17.Legend = "Legend1"
-        Series17.LegendText = "Avg: "
-        Series17.Name = "Series1"
-        DataPoint65.AxisLabel = "VG"
-        DataPoint65.Label = ""
-        DataPoint66.AxisLabel = "G"
-        DataPoint67.AxisLabel = "S"
-        DataPoint68.AxisLabel = "B"
-        Series17.Points.Add(DataPoint65)
-        Series17.Points.Add(DataPoint66)
-        Series17.Points.Add(DataPoint67)
-        Series17.Points.Add(DataPoint68)
-        Me.Chart1.Series.Add(Series17)
+        Series1.ChartArea = "ChartArea1"
+        Series1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series1.Legend = "Legend1"
+        Series1.LegendText = "Avg: "
+        Series1.Name = "Series1"
+        DataPoint1.AxisLabel = "VG"
+        DataPoint1.Label = ""
+        DataPoint2.AxisLabel = "G"
+        DataPoint3.AxisLabel = "S"
+        DataPoint4.AxisLabel = "B"
+        Series1.Points.Add(DataPoint1)
+        Series1.Points.Add(DataPoint2)
+        Series1.Points.Add(DataPoint3)
+        Series1.Points.Add(DataPoint4)
+        Me.Chart1.Series.Add(Series1)
         Me.Chart1.Size = New System.Drawing.Size(265, 140)
         Me.Chart1.TabIndex = 0
         Me.Chart1.Text = "Chart1"
         '
         'Chart2
         '
-        ChartArea18.AxisX.IsLabelAutoFit = False
-        ChartArea18.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea18.AxisX.MajorGrid.Enabled = False
-        ChartArea18.AxisX.Title = "Practicals were organized"
-        ChartArea18.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea18.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea18.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea18)
+        ChartArea2.AxisX.IsLabelAutoFit = False
+        ChartArea2.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea2.AxisX.MajorGrid.Enabled = False
+        ChartArea2.AxisX.Title = "Practicals were organized"
+        ChartArea2.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea2.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea2)
         Me.Chart2.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend18.Name = "Legend1"
-        Legend18.Position.Auto = False
-        Legend18.Position.Height = 20.42253!
-        Legend18.Position.Width = 25.0!
-        Legend18.Position.X = 75.0!
-        Me.Chart2.Legends.Add(Legend18)
+        Legend2.Name = "Legend1"
+        Legend2.Position.Auto = False
+        Legend2.Position.Height = 20.42253!
+        Legend2.Position.Width = 25.0!
+        Legend2.Position.X = 75.0!
+        Me.Chart2.Legends.Add(Legend2)
         Me.Chart2.Location = New System.Drawing.Point(274, 38)
         Me.Chart2.Name = "Chart2"
-        Series18.ChartArea = "ChartArea1"
-        Series18.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series18.Legend = "Legend1"
-        Series18.Name = "Series1"
-        DataPoint69.AxisLabel = "VG"
-        DataPoint69.Label = ""
-        DataPoint70.AxisLabel = "G"
-        DataPoint71.AxisLabel = "S"
-        DataPoint72.AxisLabel = "B"
-        Series18.Points.Add(DataPoint69)
-        Series18.Points.Add(DataPoint70)
-        Series18.Points.Add(DataPoint71)
-        Series18.Points.Add(DataPoint72)
-        Me.Chart2.Series.Add(Series18)
+        Series2.ChartArea = "ChartArea1"
+        Series2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        DataPoint5.AxisLabel = "VG"
+        DataPoint5.Label = ""
+        DataPoint6.AxisLabel = "G"
+        DataPoint7.AxisLabel = "S"
+        DataPoint8.AxisLabel = "B"
+        Series2.Points.Add(DataPoint5)
+        Series2.Points.Add(DataPoint6)
+        Series2.Points.Add(DataPoint7)
+        Series2.Points.Add(DataPoint8)
+        Me.Chart2.Series.Add(Series2)
         Me.Chart2.Size = New System.Drawing.Size(265, 140)
         Me.Chart2.TabIndex = 1
         Me.Chart2.Text = "Chart2"
         '
         'Chart3
         '
-        ChartArea19.AxisX.IsLabelAutoFit = False
-        ChartArea19.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea19.AxisX.MajorGrid.Enabled = False
-        ChartArea19.AxisX.Title = "Adequate guideline/lectures given prior to each practical"
-        ChartArea19.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea19.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea19.Name = "ChartArea1"
-        Me.Chart3.ChartAreas.Add(ChartArea19)
+        ChartArea3.AxisX.IsLabelAutoFit = False
+        ChartArea3.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea3.AxisX.MajorGrid.Enabled = False
+        ChartArea3.AxisX.Title = "Adequate guideline/lectures given prior to each practical"
+        ChartArea3.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea3.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea3.Name = "ChartArea1"
+        Me.Chart3.ChartAreas.Add(ChartArea3)
         Me.Chart3.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend19.Name = "Legend1"
-        Legend19.Position.Auto = False
-        Legend19.Position.Height = 20.42253!
-        Legend19.Position.Width = 25.0!
-        Legend19.Position.X = 75.0!
-        Me.Chart3.Legends.Add(Legend19)
+        Legend3.Name = "Legend1"
+        Legend3.Position.Auto = False
+        Legend3.Position.Height = 20.42253!
+        Legend3.Position.Width = 25.0!
+        Legend3.Position.X = 75.0!
+        Me.Chart3.Legends.Add(Legend3)
         Me.Chart3.Location = New System.Drawing.Point(545, 38)
         Me.Chart3.Name = "Chart3"
-        Series19.ChartArea = "ChartArea1"
-        Series19.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series19.Legend = "Legend1"
-        Series19.Name = "Series1"
-        DataPoint73.AxisLabel = "VG"
-        DataPoint73.Label = ""
-        DataPoint74.AxisLabel = "G"
-        DataPoint75.AxisLabel = "S"
-        DataPoint76.AxisLabel = "B"
-        Series19.Points.Add(DataPoint73)
-        Series19.Points.Add(DataPoint74)
-        Series19.Points.Add(DataPoint75)
-        Series19.Points.Add(DataPoint76)
-        Me.Chart3.Series.Add(Series19)
+        Series3.ChartArea = "ChartArea1"
+        Series3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series3.Legend = "Legend1"
+        Series3.Name = "Series1"
+        DataPoint9.AxisLabel = "VG"
+        DataPoint9.Label = ""
+        DataPoint10.AxisLabel = "G"
+        DataPoint11.AxisLabel = "S"
+        DataPoint12.AxisLabel = "B"
+        Series3.Points.Add(DataPoint9)
+        Series3.Points.Add(DataPoint10)
+        Series3.Points.Add(DataPoint11)
+        Series3.Points.Add(DataPoint12)
+        Me.Chart3.Series.Add(Series3)
         Me.Chart3.Size = New System.Drawing.Size(265, 140)
         Me.Chart3.TabIndex = 2
         Me.Chart3.Text = "Chart3"
@@ -408,7 +408,7 @@ Partial Class ViewStatsOverall
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label1.Location = New System.Drawing.Point(228, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(90, 29)
+        Me.Label1.Size = New System.Drawing.Size(89, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "School:"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -448,444 +448,444 @@ Partial Class ViewStatsOverall
         '
         'Chart4
         '
-        ChartArea20.AxisX.IsLabelAutoFit = False
-        ChartArea20.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea20.AxisX.MajorGrid.Enabled = False
-        ChartArea20.AxisX.Title = "Teacher availability"
-        ChartArea20.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea20.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea20.Name = "ChartArea1"
-        Me.Chart4.ChartAreas.Add(ChartArea20)
+        ChartArea4.AxisX.IsLabelAutoFit = False
+        ChartArea4.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea4.AxisX.MajorGrid.Enabled = False
+        ChartArea4.AxisX.Title = "Teacher availability"
+        ChartArea4.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea4.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea4.Name = "ChartArea1"
+        Me.Chart4.ChartAreas.Add(ChartArea4)
         Me.Chart4.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend20.Name = "Legend1"
-        Legend20.Position.Auto = False
-        Legend20.Position.Height = 20.42253!
-        Legend20.Position.Width = 25.0!
-        Legend20.Position.X = 75.0!
-        Me.Chart4.Legends.Add(Legend20)
+        Legend4.Name = "Legend1"
+        Legend4.Position.Auto = False
+        Legend4.Position.Height = 20.42253!
+        Legend4.Position.Width = 25.0!
+        Legend4.Position.X = 75.0!
+        Me.Chart4.Legends.Add(Legend4)
         Me.Chart4.Location = New System.Drawing.Point(816, 38)
         Me.Chart4.Name = "Chart4"
-        Series20.ChartArea = "ChartArea1"
-        Series20.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series20.Legend = "Legend1"
-        Series20.Name = "Series1"
-        DataPoint77.AxisLabel = "VG"
-        DataPoint77.Label = ""
-        DataPoint78.AxisLabel = "G"
-        DataPoint79.AxisLabel = "S"
-        DataPoint80.AxisLabel = "B"
-        Series20.Points.Add(DataPoint77)
-        Series20.Points.Add(DataPoint78)
-        Series20.Points.Add(DataPoint79)
-        Series20.Points.Add(DataPoint80)
-        Me.Chart4.Series.Add(Series20)
+        Series4.ChartArea = "ChartArea1"
+        Series4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series4.Legend = "Legend1"
+        Series4.Name = "Series1"
+        DataPoint13.AxisLabel = "VG"
+        DataPoint13.Label = ""
+        DataPoint14.AxisLabel = "G"
+        DataPoint15.AxisLabel = "S"
+        DataPoint16.AxisLabel = "B"
+        Series4.Points.Add(DataPoint13)
+        Series4.Points.Add(DataPoint14)
+        Series4.Points.Add(DataPoint15)
+        Series4.Points.Add(DataPoint16)
+        Me.Chart4.Series.Add(Series4)
         Me.Chart4.Size = New System.Drawing.Size(265, 140)
         Me.Chart4.TabIndex = 3
         Me.Chart4.Text = "Chart4"
         '
         'Chart5
         '
-        ChartArea21.AxisX.IsLabelAutoFit = False
-        ChartArea21.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea21.AxisX.MajorGrid.Enabled = False
-        ChartArea21.AxisX.Title = "Principle explained"
-        ChartArea21.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea21.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea21.Name = "ChartArea1"
-        Me.Chart5.ChartAreas.Add(ChartArea21)
+        ChartArea5.AxisX.IsLabelAutoFit = False
+        ChartArea5.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea5.AxisX.MajorGrid.Enabled = False
+        ChartArea5.AxisX.Title = "Principle explained"
+        ChartArea5.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea5.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea5.Name = "ChartArea1"
+        Me.Chart5.ChartAreas.Add(ChartArea5)
         Me.Chart5.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend21.Name = "Legend1"
-        Legend21.Position.Auto = False
-        Legend21.Position.Height = 20.42253!
-        Legend21.Position.Width = 25.0!
-        Legend21.Position.X = 75.0!
-        Me.Chart5.Legends.Add(Legend21)
+        Legend5.Name = "Legend1"
+        Legend5.Position.Auto = False
+        Legend5.Position.Height = 20.42253!
+        Legend5.Position.Width = 25.0!
+        Legend5.Position.X = 75.0!
+        Me.Chart5.Legends.Add(Legend5)
         Me.Chart5.Location = New System.Drawing.Point(3, 184)
         Me.Chart5.Name = "Chart5"
-        Series21.ChartArea = "ChartArea1"
-        Series21.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series21.Legend = "Legend1"
-        Series21.Name = "Series1"
-        DataPoint81.AxisLabel = "VG"
-        DataPoint81.Label = ""
-        DataPoint82.AxisLabel = "G"
-        DataPoint83.AxisLabel = "S"
-        DataPoint84.AxisLabel = "B"
-        Series21.Points.Add(DataPoint81)
-        Series21.Points.Add(DataPoint82)
-        Series21.Points.Add(DataPoint83)
-        Series21.Points.Add(DataPoint84)
-        Me.Chart5.Series.Add(Series21)
+        Series5.ChartArea = "ChartArea1"
+        Series5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series5.Legend = "Legend1"
+        Series5.Name = "Series1"
+        DataPoint17.AxisLabel = "VG"
+        DataPoint17.Label = ""
+        DataPoint18.AxisLabel = "G"
+        DataPoint19.AxisLabel = "S"
+        DataPoint20.AxisLabel = "B"
+        Series5.Points.Add(DataPoint17)
+        Series5.Points.Add(DataPoint18)
+        Series5.Points.Add(DataPoint19)
+        Series5.Points.Add(DataPoint20)
+        Me.Chart5.Series.Add(Series5)
         Me.Chart5.Size = New System.Drawing.Size(265, 140)
         Me.Chart5.TabIndex = 4
         Me.Chart5.Text = "Chart5"
         '
         'Chart6
         '
-        ChartArea22.AxisX.IsLabelAutoFit = False
-        ChartArea22.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea22.AxisX.MajorGrid.Enabled = False
-        ChartArea22.AxisX.Title = "Adequate demonstrations provided"
-        ChartArea22.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea22.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea22.Name = "ChartArea1"
-        Me.Chart6.ChartAreas.Add(ChartArea22)
+        ChartArea6.AxisX.IsLabelAutoFit = False
+        ChartArea6.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea6.AxisX.MajorGrid.Enabled = False
+        ChartArea6.AxisX.Title = "Adequate demonstrations provided"
+        ChartArea6.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea6.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea6.Name = "ChartArea1"
+        Me.Chart6.ChartAreas.Add(ChartArea6)
         Me.Chart6.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend22.Name = "Legend1"
-        Legend22.Position.Auto = False
-        Legend22.Position.Height = 20.42253!
-        Legend22.Position.Width = 25.0!
-        Legend22.Position.X = 75.0!
-        Me.Chart6.Legends.Add(Legend22)
+        Legend6.Name = "Legend1"
+        Legend6.Position.Auto = False
+        Legend6.Position.Height = 20.42253!
+        Legend6.Position.Width = 25.0!
+        Legend6.Position.X = 75.0!
+        Me.Chart6.Legends.Add(Legend6)
         Me.Chart6.Location = New System.Drawing.Point(274, 184)
         Me.Chart6.Name = "Chart6"
-        Series22.ChartArea = "ChartArea1"
-        Series22.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series22.Legend = "Legend1"
-        Series22.Name = "Series1"
-        DataPoint85.AxisLabel = "VG"
-        DataPoint85.Label = ""
-        DataPoint86.AxisLabel = "G"
-        DataPoint87.AxisLabel = "S"
-        DataPoint88.AxisLabel = "B"
-        Series22.Points.Add(DataPoint85)
-        Series22.Points.Add(DataPoint86)
-        Series22.Points.Add(DataPoint87)
-        Series22.Points.Add(DataPoint88)
-        Me.Chart6.Series.Add(Series22)
+        Series6.ChartArea = "ChartArea1"
+        Series6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series6.Legend = "Legend1"
+        Series6.Name = "Series1"
+        DataPoint21.AxisLabel = "VG"
+        DataPoint21.Label = ""
+        DataPoint22.AxisLabel = "G"
+        DataPoint23.AxisLabel = "S"
+        DataPoint24.AxisLabel = "B"
+        Series6.Points.Add(DataPoint21)
+        Series6.Points.Add(DataPoint22)
+        Series6.Points.Add(DataPoint23)
+        Series6.Points.Add(DataPoint24)
+        Me.Chart6.Series.Add(Series6)
         Me.Chart6.Size = New System.Drawing.Size(265, 140)
         Me.Chart6.TabIndex = 5
         Me.Chart6.Text = "Chart6"
         '
         'Chart7
         '
-        ChartArea23.AxisX.IsLabelAutoFit = False
-        ChartArea23.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea23.AxisX.MajorGrid.Enabled = False
-        ChartArea23.AxisX.Title = "Adequate demonstrators/technicians for assistance"
-        ChartArea23.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea23.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea23.Name = "ChartArea1"
-        Me.Chart7.ChartAreas.Add(ChartArea23)
+        ChartArea7.AxisX.IsLabelAutoFit = False
+        ChartArea7.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea7.AxisX.MajorGrid.Enabled = False
+        ChartArea7.AxisX.Title = "Adequate demonstrators/technicians for assistance"
+        ChartArea7.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea7.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea7.Name = "ChartArea1"
+        Me.Chart7.ChartAreas.Add(ChartArea7)
         Me.Chart7.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend23.Name = "Legend1"
-        Legend23.Position.Auto = False
-        Legend23.Position.Height = 20.42253!
-        Legend23.Position.Width = 25.0!
-        Legend23.Position.X = 75.0!
-        Me.Chart7.Legends.Add(Legend23)
+        Legend7.Name = "Legend1"
+        Legend7.Position.Auto = False
+        Legend7.Position.Height = 20.42253!
+        Legend7.Position.Width = 25.0!
+        Legend7.Position.X = 75.0!
+        Me.Chart7.Legends.Add(Legend7)
         Me.Chart7.Location = New System.Drawing.Point(545, 184)
         Me.Chart7.Name = "Chart7"
-        Series23.ChartArea = "ChartArea1"
-        Series23.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series23.Legend = "Legend1"
-        Series23.Name = "Series1"
-        DataPoint89.AxisLabel = "VG"
-        DataPoint89.Label = ""
-        DataPoint90.AxisLabel = "G"
-        DataPoint91.AxisLabel = "S"
-        DataPoint92.AxisLabel = "B"
-        Series23.Points.Add(DataPoint89)
-        Series23.Points.Add(DataPoint90)
-        Series23.Points.Add(DataPoint91)
-        Series23.Points.Add(DataPoint92)
-        Me.Chart7.Series.Add(Series23)
+        Series7.ChartArea = "ChartArea1"
+        Series7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series7.Legend = "Legend1"
+        Series7.Name = "Series1"
+        DataPoint25.AxisLabel = "VG"
+        DataPoint25.Label = ""
+        DataPoint26.AxisLabel = "G"
+        DataPoint27.AxisLabel = "S"
+        DataPoint28.AxisLabel = "B"
+        Series7.Points.Add(DataPoint25)
+        Series7.Points.Add(DataPoint26)
+        Series7.Points.Add(DataPoint27)
+        Series7.Points.Add(DataPoint28)
+        Me.Chart7.Series.Add(Series7)
         Me.Chart7.Size = New System.Drawing.Size(265, 140)
         Me.Chart7.TabIndex = 6
         Me.Chart7.Text = "Chart7"
         '
         'Chart8
         '
-        ChartArea24.AxisX.IsLabelAutoFit = False
-        ChartArea24.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea24.AxisX.MajorGrid.Enabled = False
-        ChartArea24.AxisX.Title = "Stimulated independant thinking"
-        ChartArea24.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea24.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea24.Name = "ChartArea1"
-        Me.Chart8.ChartAreas.Add(ChartArea24)
+        ChartArea8.AxisX.IsLabelAutoFit = False
+        ChartArea8.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea8.AxisX.MajorGrid.Enabled = False
+        ChartArea8.AxisX.Title = "Stimulated independant thinking"
+        ChartArea8.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea8.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea8.Name = "ChartArea1"
+        Me.Chart8.ChartAreas.Add(ChartArea8)
         Me.Chart8.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend24.Name = "Legend1"
-        Legend24.Position.Auto = False
-        Legend24.Position.Height = 20.42253!
-        Legend24.Position.Width = 25.0!
-        Legend24.Position.X = 75.0!
-        Me.Chart8.Legends.Add(Legend24)
+        Legend8.Name = "Legend1"
+        Legend8.Position.Auto = False
+        Legend8.Position.Height = 20.42253!
+        Legend8.Position.Width = 25.0!
+        Legend8.Position.X = 75.0!
+        Me.Chart8.Legends.Add(Legend8)
         Me.Chart8.Location = New System.Drawing.Point(816, 184)
         Me.Chart8.Name = "Chart8"
-        Series24.ChartArea = "ChartArea1"
-        Series24.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series24.Legend = "Legend1"
-        Series24.Name = "Series1"
-        DataPoint93.AxisLabel = "VG"
-        DataPoint93.Label = ""
-        DataPoint94.AxisLabel = "G"
-        DataPoint95.AxisLabel = "S"
-        DataPoint96.AxisLabel = "B"
-        Series24.Points.Add(DataPoint93)
-        Series24.Points.Add(DataPoint94)
-        Series24.Points.Add(DataPoint95)
-        Series24.Points.Add(DataPoint96)
-        Me.Chart8.Series.Add(Series24)
+        Series8.ChartArea = "ChartArea1"
+        Series8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series8.Legend = "Legend1"
+        Series8.Name = "Series1"
+        DataPoint29.AxisLabel = "VG"
+        DataPoint29.Label = ""
+        DataPoint30.AxisLabel = "G"
+        DataPoint31.AxisLabel = "S"
+        DataPoint32.AxisLabel = "B"
+        Series8.Points.Add(DataPoint29)
+        Series8.Points.Add(DataPoint30)
+        Series8.Points.Add(DataPoint31)
+        Series8.Points.Add(DataPoint32)
+        Me.Chart8.Series.Add(Series8)
         Me.Chart8.Size = New System.Drawing.Size(265, 140)
         Me.Chart8.TabIndex = 7
         Me.Chart8.Text = "Chart8"
         '
         'Chart9
         '
-        ChartArea25.AxisX.IsLabelAutoFit = False
-        ChartArea25.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea25.AxisX.MajorGrid.Enabled = False
-        ChartArea25.AxisX.Title = "Held as indicated in time table"
-        ChartArea25.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea25.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea25.Name = "ChartArea1"
-        Me.Chart9.ChartAreas.Add(ChartArea25)
+        ChartArea9.AxisX.IsLabelAutoFit = False
+        ChartArea9.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea9.AxisX.MajorGrid.Enabled = False
+        ChartArea9.AxisX.Title = "Held as indicated in time table"
+        ChartArea9.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea9.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea9.Name = "ChartArea1"
+        Me.Chart9.ChartAreas.Add(ChartArea9)
         Me.Chart9.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend25.Name = "Legend1"
-        Legend25.Position.Auto = False
-        Legend25.Position.Height = 20.42253!
-        Legend25.Position.Width = 25.0!
-        Legend25.Position.X = 75.0!
-        Me.Chart9.Legends.Add(Legend25)
+        Legend9.Name = "Legend1"
+        Legend9.Position.Auto = False
+        Legend9.Position.Height = 20.42253!
+        Legend9.Position.Width = 25.0!
+        Legend9.Position.X = 75.0!
+        Me.Chart9.Legends.Add(Legend9)
         Me.Chart9.Location = New System.Drawing.Point(3, 330)
         Me.Chart9.Name = "Chart9"
-        Series25.ChartArea = "ChartArea1"
-        Series25.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series25.Legend = "Legend1"
-        Series25.Name = "Series1"
-        DataPoint97.AxisLabel = "VG"
-        DataPoint97.Label = ""
-        DataPoint98.AxisLabel = "G"
-        DataPoint99.AxisLabel = "S"
-        DataPoint100.AxisLabel = "B"
-        Series25.Points.Add(DataPoint97)
-        Series25.Points.Add(DataPoint98)
-        Series25.Points.Add(DataPoint99)
-        Series25.Points.Add(DataPoint100)
-        Me.Chart9.Series.Add(Series25)
+        Series9.ChartArea = "ChartArea1"
+        Series9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series9.Legend = "Legend1"
+        Series9.Name = "Series1"
+        DataPoint33.AxisLabel = "VG"
+        DataPoint33.Label = ""
+        DataPoint34.AxisLabel = "G"
+        DataPoint35.AxisLabel = "S"
+        DataPoint36.AxisLabel = "B"
+        Series9.Points.Add(DataPoint33)
+        Series9.Points.Add(DataPoint34)
+        Series9.Points.Add(DataPoint35)
+        Series9.Points.Add(DataPoint36)
+        Me.Chart9.Series.Add(Series9)
         Me.Chart9.Size = New System.Drawing.Size(265, 140)
         Me.Chart9.TabIndex = 8
         Me.Chart9.Text = "Chart9"
         '
         'Chart10
         '
-        ChartArea26.AxisX.IsLabelAutoFit = False
-        ChartArea26.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea26.AxisX.MajorGrid.Enabled = False
-        ChartArea26.AxisX.Title = "Records were maintained"
-        ChartArea26.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea26.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea26.Name = "ChartArea1"
-        Me.Chart10.ChartAreas.Add(ChartArea26)
+        ChartArea10.AxisX.IsLabelAutoFit = False
+        ChartArea10.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea10.AxisX.MajorGrid.Enabled = False
+        ChartArea10.AxisX.Title = "Records were maintained"
+        ChartArea10.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea10.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea10.Name = "ChartArea1"
+        Me.Chart10.ChartAreas.Add(ChartArea10)
         Me.Chart10.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend26.Name = "Legend1"
-        Legend26.Position.Auto = False
-        Legend26.Position.Height = 20.42253!
-        Legend26.Position.Width = 25.0!
-        Legend26.Position.X = 75.0!
-        Me.Chart10.Legends.Add(Legend26)
+        Legend10.Name = "Legend1"
+        Legend10.Position.Auto = False
+        Legend10.Position.Height = 20.42253!
+        Legend10.Position.Width = 25.0!
+        Legend10.Position.X = 75.0!
+        Me.Chart10.Legends.Add(Legend10)
         Me.Chart10.Location = New System.Drawing.Point(274, 330)
         Me.Chart10.Name = "Chart10"
-        Series26.ChartArea = "ChartArea1"
-        Series26.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series26.Legend = "Legend1"
-        Series26.Name = "Series1"
-        DataPoint101.AxisLabel = "VG"
-        DataPoint101.Label = ""
-        DataPoint102.AxisLabel = "G"
-        DataPoint103.AxisLabel = "S"
-        DataPoint104.AxisLabel = "B"
-        Series26.Points.Add(DataPoint101)
-        Series26.Points.Add(DataPoint102)
-        Series26.Points.Add(DataPoint103)
-        Series26.Points.Add(DataPoint104)
-        Me.Chart10.Series.Add(Series26)
+        Series10.ChartArea = "ChartArea1"
+        Series10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series10.Legend = "Legend1"
+        Series10.Name = "Series1"
+        DataPoint37.AxisLabel = "VG"
+        DataPoint37.Label = ""
+        DataPoint38.AxisLabel = "G"
+        DataPoint39.AxisLabel = "S"
+        DataPoint40.AxisLabel = "B"
+        Series10.Points.Add(DataPoint37)
+        Series10.Points.Add(DataPoint38)
+        Series10.Points.Add(DataPoint39)
+        Series10.Points.Add(DataPoint40)
+        Me.Chart10.Series.Add(Series10)
         Me.Chart10.Size = New System.Drawing.Size(265, 140)
         Me.Chart10.TabIndex = 9
         Me.Chart10.Text = "Chart10"
         '
         'Chart11
         '
-        ChartArea27.AxisX.IsLabelAutoFit = False
-        ChartArea27.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea27.AxisX.MajorGrid.Enabled = False
-        ChartArea27.AxisX.Title = "Periodical assesments"
-        ChartArea27.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea27.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea27.Name = "ChartArea1"
-        Me.Chart11.ChartAreas.Add(ChartArea27)
+        ChartArea11.AxisX.IsLabelAutoFit = False
+        ChartArea11.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea11.AxisX.MajorGrid.Enabled = False
+        ChartArea11.AxisX.Title = "Periodical assesments"
+        ChartArea11.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea11.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea11.Name = "ChartArea1"
+        Me.Chart11.ChartAreas.Add(ChartArea11)
         Me.Chart11.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend27.Name = "Legend1"
-        Legend27.Position.Auto = False
-        Legend27.Position.Height = 20.42253!
-        Legend27.Position.Width = 25.0!
-        Legend27.Position.X = 75.0!
-        Me.Chart11.Legends.Add(Legend27)
+        Legend11.Name = "Legend1"
+        Legend11.Position.Auto = False
+        Legend11.Position.Height = 20.42253!
+        Legend11.Position.Width = 25.0!
+        Legend11.Position.X = 75.0!
+        Me.Chart11.Legends.Add(Legend11)
         Me.Chart11.Location = New System.Drawing.Point(545, 330)
         Me.Chart11.Name = "Chart11"
-        Series27.ChartArea = "ChartArea1"
-        Series27.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series27.Legend = "Legend1"
-        Series27.Name = "Series1"
-        DataPoint105.AxisLabel = "VG"
-        DataPoint105.Label = ""
-        DataPoint106.AxisLabel = "G"
-        DataPoint107.AxisLabel = "S"
-        DataPoint108.AxisLabel = "B"
-        Series27.Points.Add(DataPoint105)
-        Series27.Points.Add(DataPoint106)
-        Series27.Points.Add(DataPoint107)
-        Series27.Points.Add(DataPoint108)
-        Me.Chart11.Series.Add(Series27)
+        Series11.ChartArea = "ChartArea1"
+        Series11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series11.Legend = "Legend1"
+        Series11.Name = "Series1"
+        DataPoint41.AxisLabel = "VG"
+        DataPoint41.Label = ""
+        DataPoint42.AxisLabel = "G"
+        DataPoint43.AxisLabel = "S"
+        DataPoint44.AxisLabel = "B"
+        Series11.Points.Add(DataPoint41)
+        Series11.Points.Add(DataPoint42)
+        Series11.Points.Add(DataPoint43)
+        Series11.Points.Add(DataPoint44)
+        Me.Chart11.Series.Add(Series11)
         Me.Chart11.Size = New System.Drawing.Size(265, 140)
         Me.Chart11.TabIndex = 10
         Me.Chart11.Text = "Chart11"
         '
         'Chart12
         '
-        ChartArea28.AxisX.IsLabelAutoFit = False
-        ChartArea28.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea28.AxisX.MajorGrid.Enabled = False
-        ChartArea28.AxisX.Title = "Proper materials available"
-        ChartArea28.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea28.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea28.Name = "ChartArea1"
-        Me.Chart12.ChartAreas.Add(ChartArea28)
+        ChartArea12.AxisX.IsLabelAutoFit = False
+        ChartArea12.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea12.AxisX.MajorGrid.Enabled = False
+        ChartArea12.AxisX.Title = "Proper materials available"
+        ChartArea12.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea12.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea12.Name = "ChartArea1"
+        Me.Chart12.ChartAreas.Add(ChartArea12)
         Me.Chart12.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend28.Name = "Legend1"
-        Legend28.Position.Auto = False
-        Legend28.Position.Height = 20.42253!
-        Legend28.Position.Width = 25.0!
-        Legend28.Position.X = 75.0!
-        Me.Chart12.Legends.Add(Legend28)
+        Legend12.Name = "Legend1"
+        Legend12.Position.Auto = False
+        Legend12.Position.Height = 20.42253!
+        Legend12.Position.Width = 25.0!
+        Legend12.Position.X = 75.0!
+        Me.Chart12.Legends.Add(Legend12)
         Me.Chart12.Location = New System.Drawing.Point(816, 330)
         Me.Chart12.Name = "Chart12"
-        Series28.ChartArea = "ChartArea1"
-        Series28.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series28.Legend = "Legend1"
-        Series28.Name = "Series1"
-        DataPoint109.AxisLabel = "VG"
-        DataPoint109.Label = ""
-        DataPoint110.AxisLabel = "G"
-        DataPoint111.AxisLabel = "S"
-        DataPoint112.AxisLabel = "B"
-        Series28.Points.Add(DataPoint109)
-        Series28.Points.Add(DataPoint110)
-        Series28.Points.Add(DataPoint111)
-        Series28.Points.Add(DataPoint112)
-        Me.Chart12.Series.Add(Series28)
+        Series12.ChartArea = "ChartArea1"
+        Series12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series12.Legend = "Legend1"
+        Series12.Name = "Series1"
+        DataPoint45.AxisLabel = "VG"
+        DataPoint45.Label = ""
+        DataPoint46.AxisLabel = "G"
+        DataPoint47.AxisLabel = "S"
+        DataPoint48.AxisLabel = "B"
+        Series12.Points.Add(DataPoint45)
+        Series12.Points.Add(DataPoint46)
+        Series12.Points.Add(DataPoint47)
+        Series12.Points.Add(DataPoint48)
+        Me.Chart12.Series.Add(Series12)
         Me.Chart12.Size = New System.Drawing.Size(265, 140)
         Me.Chart12.TabIndex = 11
         Me.Chart12.Text = "Chart12"
         '
         'Chart13
         '
-        ChartArea29.AxisX.IsLabelAutoFit = False
-        ChartArea29.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea29.AxisX.MajorGrid.Enabled = False
-        ChartArea29.AxisX.Title = "Space provided"
-        ChartArea29.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea29.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea29.Name = "ChartArea1"
-        Me.Chart13.ChartAreas.Add(ChartArea29)
+        ChartArea13.AxisX.IsLabelAutoFit = False
+        ChartArea13.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea13.AxisX.MajorGrid.Enabled = False
+        ChartArea13.AxisX.Title = "Space provided"
+        ChartArea13.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea13.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea13.Name = "ChartArea1"
+        Me.Chart13.ChartAreas.Add(ChartArea13)
         Me.Chart13.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend29.Name = "Legend1"
-        Legend29.Position.Auto = False
-        Legend29.Position.Height = 20.42253!
-        Legend29.Position.Width = 25.0!
-        Legend29.Position.X = 75.0!
-        Me.Chart13.Legends.Add(Legend29)
+        Legend13.Name = "Legend1"
+        Legend13.Position.Auto = False
+        Legend13.Position.Height = 20.42253!
+        Legend13.Position.Width = 25.0!
+        Legend13.Position.X = 75.0!
+        Me.Chart13.Legends.Add(Legend13)
         Me.Chart13.Location = New System.Drawing.Point(3, 476)
         Me.Chart13.Name = "Chart13"
-        Series29.ChartArea = "ChartArea1"
-        Series29.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series29.Legend = "Legend1"
-        Series29.Name = "Series1"
-        DataPoint113.AxisLabel = "VG"
-        DataPoint113.Label = ""
-        DataPoint114.AxisLabel = "G"
-        DataPoint115.AxisLabel = "S"
-        DataPoint116.AxisLabel = "B"
-        Series29.Points.Add(DataPoint113)
-        Series29.Points.Add(DataPoint114)
-        Series29.Points.Add(DataPoint115)
-        Series29.Points.Add(DataPoint116)
-        Me.Chart13.Series.Add(Series29)
+        Series13.ChartArea = "ChartArea1"
+        Series13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series13.Legend = "Legend1"
+        Series13.Name = "Series1"
+        DataPoint49.AxisLabel = "VG"
+        DataPoint49.Label = ""
+        DataPoint50.AxisLabel = "G"
+        DataPoint51.AxisLabel = "S"
+        DataPoint52.AxisLabel = "B"
+        Series13.Points.Add(DataPoint49)
+        Series13.Points.Add(DataPoint50)
+        Series13.Points.Add(DataPoint51)
+        Series13.Points.Add(DataPoint52)
+        Me.Chart13.Series.Add(Series13)
         Me.Chart13.Size = New System.Drawing.Size(265, 140)
         Me.Chart13.TabIndex = 12
         Me.Chart13.Text = "Chart13"
         '
         'Chart14
         '
-        ChartArea30.AxisX.IsLabelAutoFit = False
-        ChartArea30.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea30.AxisX.MajorGrid.Enabled = False
-        ChartArea30.AxisX.Title = "Library Support"
-        ChartArea30.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea30.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea30.Name = "ChartArea1"
-        Me.Chart14.ChartAreas.Add(ChartArea30)
+        ChartArea14.AxisX.IsLabelAutoFit = False
+        ChartArea14.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea14.AxisX.MajorGrid.Enabled = False
+        ChartArea14.AxisX.Title = "Library Support"
+        ChartArea14.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea14.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea14.Name = "ChartArea1"
+        Me.Chart14.ChartAreas.Add(ChartArea14)
         Me.Chart14.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend30.Name = "Legend1"
-        Legend30.Position.Auto = False
-        Legend30.Position.Height = 20.42253!
-        Legend30.Position.Width = 25.0!
-        Legend30.Position.X = 75.0!
-        Me.Chart14.Legends.Add(Legend30)
+        Legend14.Name = "Legend1"
+        Legend14.Position.Auto = False
+        Legend14.Position.Height = 20.42253!
+        Legend14.Position.Width = 25.0!
+        Legend14.Position.X = 75.0!
+        Me.Chart14.Legends.Add(Legend14)
         Me.Chart14.Location = New System.Drawing.Point(274, 476)
         Me.Chart14.Name = "Chart14"
-        Series30.ChartArea = "ChartArea1"
-        Series30.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series30.Legend = "Legend1"
-        Series30.Name = "Series1"
-        DataPoint117.AxisLabel = "VG"
-        DataPoint117.Label = ""
-        DataPoint118.AxisLabel = "G"
-        DataPoint119.AxisLabel = "S"
-        DataPoint120.AxisLabel = "B"
-        Series30.Points.Add(DataPoint117)
-        Series30.Points.Add(DataPoint118)
-        Series30.Points.Add(DataPoint119)
-        Series30.Points.Add(DataPoint120)
-        Me.Chart14.Series.Add(Series30)
+        Series14.ChartArea = "ChartArea1"
+        Series14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series14.Legend = "Legend1"
+        Series14.Name = "Series1"
+        DataPoint53.AxisLabel = "VG"
+        DataPoint53.Label = ""
+        DataPoint54.AxisLabel = "G"
+        DataPoint55.AxisLabel = "S"
+        DataPoint56.AxisLabel = "B"
+        Series14.Points.Add(DataPoint53)
+        Series14.Points.Add(DataPoint54)
+        Series14.Points.Add(DataPoint55)
+        Series14.Points.Add(DataPoint56)
+        Me.Chart14.Series.Add(Series14)
         Me.Chart14.Size = New System.Drawing.Size(265, 140)
         Me.Chart14.TabIndex = 13
         Me.Chart14.Text = "Chart14"
         '
         'Chart15
         '
-        ChartArea31.AxisX.IsLabelAutoFit = False
-        ChartArea31.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea31.AxisX.MajorGrid.Enabled = False
-        ChartArea31.AxisX.Title = "Made curious about subject"
-        ChartArea31.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea31.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea31.Name = "ChartArea1"
-        Me.Chart15.ChartAreas.Add(ChartArea31)
+        ChartArea15.AxisX.IsLabelAutoFit = False
+        ChartArea15.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea15.AxisX.MajorGrid.Enabled = False
+        ChartArea15.AxisX.Title = "Made curious about subject"
+        ChartArea15.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea15.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea15.Name = "ChartArea1"
+        Me.Chart15.ChartAreas.Add(ChartArea15)
         Me.Chart15.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend31.Name = "Legend1"
-        Legend31.Position.Auto = False
-        Legend31.Position.Height = 20.42253!
-        Legend31.Position.Width = 25.0!
-        Legend31.Position.X = 75.0!
-        Me.Chart15.Legends.Add(Legend31)
+        Legend15.Name = "Legend1"
+        Legend15.Position.Auto = False
+        Legend15.Position.Height = 20.42253!
+        Legend15.Position.Width = 25.0!
+        Legend15.Position.X = 75.0!
+        Me.Chart15.Legends.Add(Legend15)
         Me.Chart15.Location = New System.Drawing.Point(545, 476)
         Me.Chart15.Name = "Chart15"
-        Series31.ChartArea = "ChartArea1"
-        Series31.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series31.Legend = "Legend1"
-        Series31.Name = "Series1"
-        DataPoint121.AxisLabel = "VG"
-        DataPoint121.Label = ""
-        DataPoint122.AxisLabel = "G"
-        DataPoint123.AxisLabel = "S"
-        DataPoint124.AxisLabel = "B"
-        Series31.Points.Add(DataPoint121)
-        Series31.Points.Add(DataPoint122)
-        Series31.Points.Add(DataPoint123)
-        Series31.Points.Add(DataPoint124)
-        Me.Chart15.Series.Add(Series31)
+        Series15.ChartArea = "ChartArea1"
+        Series15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series15.Legend = "Legend1"
+        Series15.Name = "Series1"
+        DataPoint57.AxisLabel = "VG"
+        DataPoint57.Label = ""
+        DataPoint58.AxisLabel = "G"
+        DataPoint59.AxisLabel = "S"
+        DataPoint60.AxisLabel = "B"
+        Series15.Points.Add(DataPoint57)
+        Series15.Points.Add(DataPoint58)
+        Series15.Points.Add(DataPoint59)
+        Series15.Points.Add(DataPoint60)
+        Me.Chart15.Series.Add(Series15)
         Me.Chart15.Size = New System.Drawing.Size(265, 140)
         Me.Chart15.TabIndex = 14
         Me.Chart15.Text = "Chart15"
@@ -1067,37 +1067,37 @@ Partial Class ViewStatsOverall
         '
         'Chart16
         '
-        ChartArea32.AxisX.IsLabelAutoFit = False
-        ChartArea32.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea32.AxisX.MajorGrid.Enabled = False
-        ChartArea32.AxisX.Title = "Made curious about subject"
-        ChartArea32.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea32.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea32.Name = "ChartArea1"
-        Me.Chart16.ChartAreas.Add(ChartArea32)
+        ChartArea16.AxisX.IsLabelAutoFit = False
+        ChartArea16.AxisX.LabelStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea16.AxisX.MajorGrid.Enabled = False
+        ChartArea16.AxisX.Title = "Made curious about subject"
+        ChartArea16.AxisX.TitleFont = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea16.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea16.Name = "ChartArea1"
+        Me.Chart16.ChartAreas.Add(ChartArea16)
         Me.Chart16.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend32.Name = "Legend1"
-        Legend32.Position.Auto = False
-        Legend32.Position.Height = 20.42253!
-        Legend32.Position.Width = 25.0!
-        Legend32.Position.X = 75.0!
-        Me.Chart16.Legends.Add(Legend32)
+        Legend16.Name = "Legend1"
+        Legend16.Position.Auto = False
+        Legend16.Position.Height = 20.42253!
+        Legend16.Position.Width = 25.0!
+        Legend16.Position.X = 75.0!
+        Me.Chart16.Legends.Add(Legend16)
         Me.Chart16.Location = New System.Drawing.Point(816, 476)
         Me.Chart16.Name = "Chart16"
-        Series32.ChartArea = "ChartArea1"
-        Series32.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series32.Legend = "Legend1"
-        Series32.Name = "Series1"
-        DataPoint125.AxisLabel = "VG"
-        DataPoint125.Label = ""
-        DataPoint126.AxisLabel = "G"
-        DataPoint127.AxisLabel = "S"
-        DataPoint128.AxisLabel = "B"
-        Series32.Points.Add(DataPoint125)
-        Series32.Points.Add(DataPoint126)
-        Series32.Points.Add(DataPoint127)
-        Series32.Points.Add(DataPoint128)
-        Me.Chart16.Series.Add(Series32)
+        Series16.ChartArea = "ChartArea1"
+        Series16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series16.Legend = "Legend1"
+        Series16.Name = "Series1"
+        DataPoint61.AxisLabel = "VG"
+        DataPoint61.Label = ""
+        DataPoint62.AxisLabel = "G"
+        DataPoint63.AxisLabel = "S"
+        DataPoint64.AxisLabel = "B"
+        Series16.Points.Add(DataPoint61)
+        Series16.Points.Add(DataPoint62)
+        Series16.Points.Add(DataPoint63)
+        Series16.Points.Add(DataPoint64)
+        Me.Chart16.Series.Add(Series16)
         Me.Chart16.Size = New System.Drawing.Size(265, 140)
         Me.Chart16.TabIndex = 15
         Me.Chart16.Text = "Chart16"

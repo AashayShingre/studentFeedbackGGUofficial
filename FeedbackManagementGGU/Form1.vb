@@ -10,7 +10,7 @@ Public Class Form1
             Console.WriteLine("Connection established")
         Catch exp As Exception
             Console.WriteLine("Error occured : " + exp.Message)
-            MessageBox.Show("Error connecting Database.\nError message:\n" + exp.Message)
+            MessageBox.Show("Error connecting Database. Error message: " + exp.Message, "Error Loading...", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
 

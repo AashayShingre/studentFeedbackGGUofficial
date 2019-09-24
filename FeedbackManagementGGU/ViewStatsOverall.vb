@@ -73,6 +73,7 @@ Public Class ViewStatsOverall
                     For k As Integer = 0 To 3
                         Chrt.Series("Series1").Points(k).SetValueY(0)
                     Next
+                    Chrt.Series("Series1").LegendText = "Avg: 00.00"
                 End If
             Next
             'clear labels
@@ -95,6 +96,10 @@ Public Class ViewStatsOverall
                 Console.WriteLine("at chart " & Chrt.Text)
                 Chrt.ChartAreas("ChartArea1").AxisX.Title = Labels(labelIndex)
                 labelIndex += 1
+                Chrt.Series(0).Points(0).Color = Color.Green
+                Chrt.Series(0).Points(1).Color = Color.CornflowerBlue
+                Chrt.Series(0).Points(2).Color = Color.DarkOrange
+                Chrt.Series(0).Points(3).Color = Color.Red
             End If
         Next
         CheckBox1.Checked = True
@@ -110,6 +115,21 @@ Public Class ViewStatsOverall
         lRect.Height = Me.Height
 
         Button2.Visible = False
+        If CheckBox1.Checked Then
+            ComboBox1.Visible = False
+            Label1.Visible = False
+            TableLayoutPanel3.Visible = False
+            TableLayoutPanel4.Visible = False
+        Else
+            CheckBox1.Visible = False
+            If ComboBox2.Text = "" Then
+                TableLayoutPanel3.Visible = False
+            End If
+
+            If ComboBox3.Text = "" Then
+                TableLayoutPanel4.Visible = False
+            End If
+        End If
         Me.DrawToBitmap(mPrintBitMap, lRect)
 
         Dim newBitMap As New Bitmap(mPrintBitMap)
@@ -121,6 +141,11 @@ Public Class ViewStatsOverall
         End If
 
         Button2.Visible = True
+        CheckBox1.Visible = True
+        ComboBox1.Visible = True
+        Label1.Visible = True
+        TableLayoutPanel3.Visible = True
+        TableLayoutPanel4.Visible = True
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged

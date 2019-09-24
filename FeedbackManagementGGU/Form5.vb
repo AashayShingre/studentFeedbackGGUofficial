@@ -115,6 +115,7 @@ Public Class Form5
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click, LinkLabel1.Click
         Me.Close()
         Manage.Show()
+        Manage.RefreshPage()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -152,8 +153,8 @@ Public Class Form5
 
         MessageBox.Show("Successfully updated")
         Me.Close()
-        Manage.Refresh()
         Manage.Show()
+        Manage.RefreshPage()
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
